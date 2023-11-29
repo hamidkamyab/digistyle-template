@@ -101,14 +101,46 @@ a {
     --silver: #eeeeee;
 }
 
+.mCS_rightPos .mCSB_container {
+    margin: 0 !important;
+}
+
+.mCSB_scrollTools {
+    z-index: 10;
+    width: 8px;
+}
+
+.mCSB_draggerContainer {
+    width: 8px;
+}
+
+.mCSB_dragger_bar {
+    width: 8px !important;
+    background-color: rgb(29, 29, 29) !important;
+    box-shadow: 0 0 3px 1px #f5f5f5;
+}
+
 
 /*****************/
 
 
 /********Head**********/
 
+.bodyBox {
+    max-height: 100%;
+}
+
 .header-container {
     z-index: 5;
+}
+
+.slider .sliderUl>li {
+    z-index: 4;
+    display: none;
+}
+
+.slider .sliderUl>li:first-child {
+    display: block;
 }
 
 .slider .sliderUl img {
@@ -136,7 +168,8 @@ a {
 }
 
 .sliderOperationBox {
-    bottom: 90px;
+    z-index: 5;
+    top: 480px;
     right: 60px;
 }
 
@@ -148,7 +181,7 @@ a {
 }
 
 .sliderOperationBox .sliderPaginateBox .sliderPaginateItem.active {
-    background-color: #161616;
+    background-color: #fff;
 }
 
 .sliderOperationBox .sliderBtnBox i {

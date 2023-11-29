@@ -8,6 +8,7 @@
     <title>قالب دیجی استایل</title>
 
     <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/jquery.custom-scrollbar.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="./fonticon/css/animation.css">
@@ -15,13 +16,13 @@
     <link rel="stylesheet" href="./fonticon/css/fontello.css">
 </head>
 
-<body class="BYekan">
+<body class="BYekan vh-100">
 
     <!-- bodyBox -->
-    <div class="bodyBox">
+    <div class="bodyBox mCustomScrollbar HoverSC mCS_noMargin mCS_rightPos overflow-hidden h-100" data-mcs-theme="light">
 
         <!-- slider -->
-        <div class="sliderBox w-100 position-relative">
+        <div class="sliderBox position-relative">
             <div class="container header-container position-absolute top-0 start-0 end-0 my-4 d-flex justify-content-between p-0">
                 <div class="r-header-container text-white d-flex align-items-start justify-content-start">
                     <div class="d-flex align-items-center gap-1">
@@ -32,7 +33,7 @@
 
                             <div class="header-cart position-absolute start-0 rounded-1 bg-white">
                                 <div class="d-flex justify-content-center align-items-center flex-column py-5 gap-2">
-                                    <img src="img/cart-empty.svg" alt="" srcset="">
+                                    <img src="img/icon/cart-empty.svg" alt="" srcset="">
                                     <span class="fs-5 text-dark mt-1">سبد خرید شما خالی است.</span>
 
                                     <span class="text-muted mt-5">شاید این صفحات برای شما جذاب باشند</span>
@@ -94,19 +95,23 @@
             </div>
 
             <div class="slider position-relative">
-                <ul class="sliderUl border-warning m-0 p-0">
-                    <li class="list-unstyled">
+                <ul class="sliderUl border-warning m-0 p-0 d-flex position-relative">
+                    <li class="list-unstyled m-0 position-absolute" id="slide-0">
                         <img src="./img/slide-1.jpg" alt="" srcset="">
+                    </li>
+                    <li class="list-unstyled m-0 position-absolute" id="slide-1">
+                        <img src="./img/slide-2.jpg" alt="" srcset="">
+                    </li>
+                    <li class="list-unstyled m-0 position-absolute" id="slide-2">
+                        <img src="./img/slide-3.jpg" alt="" srcset="">
                     </li>
                 </ul>
 
                 <div class="sliderOperationBox position-absolute">
                     <ul class="list-unstyled sliderPaginateBox d-flex gap-2 d-flex align-items-center justify-content-center">
-                        <li class="sliderPaginateItem rounded-circle"></li>
-                        <li class="sliderPaginateItem rounded-circle"></li>
-                        <li class="sliderPaginateItem rounded-circle active"></li>
-                        <li class="sliderPaginateItem rounded-circle"></li>
-                        <li class="sliderPaginateItem rounded-circle"></li>
+                        <li class="sliderPaginateItem rounded-circle active" id="sliderPaginateItem-0"></li>
+                        <li class="sliderPaginateItem rounded-circle" id="sliderPaginateItem-1"></li>
+                        <li class="sliderPaginateItem rounded-circle" id="sliderPaginateItem-2"></li>
                     </ul>
                     <div class="sliderBtnBox d-flex justify-content-between gap-4">
                         <i class="nextSlide icon-arrow-right text-white text-shadow-dark"></i>
@@ -115,11 +120,10 @@
 
                 </div>
             </div>
-
         </div>
         <!-- slider -->
 
-
+        <div style="height: 800px; width:100%"></div>
 
     </div>
     <!-- bodyBox -->
@@ -132,6 +136,7 @@
 
 <script src="./js/bootstrap.bundle.js"></script>
 <script src="./js/jquery-3.7.1.min.js"></script>
+<script src="./js/jquery.custom-scrollbar.js"></script>
 <script src="./js/style.js"></script>
 
 </html>
