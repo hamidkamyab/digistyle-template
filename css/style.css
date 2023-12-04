@@ -44,6 +44,10 @@ a {
     height: 60px !important;
 }
 
+.vr-seperator-xxl {
+    height: 80px !important;
+}
+
 .text-light-silver {
     color: var(--light-silver);
 }
@@ -58,6 +62,14 @@ a {
 
 .border-silver {
     border-color: var(--silver);
+}
+
+.bg-light-silver {
+    background-color: var(--light-silver);
+}
+
+.bg-silver {
+    background-color: var(--silver);
 }
 
 .fs-9 {
@@ -84,6 +96,10 @@ a {
     font-size: 14px;
 }
 
+.fs-15 {
+    font-size: 15px;
+}
+
 .fs-18 {
     font-size: 18px;
 }
@@ -96,9 +112,17 @@ a {
     box-shadow: 0.6pt 0.6pt 4px #000000;
 }
 
+.text-shadow-light {
+    text-shadow: 0.6pt 0.6pt 4px #fff;
+}
+
+.box-shadow-light {
+    box-shadow: 0.6pt 0.6pt 4px #fff;
+}
+
 :root {
-    --light-silver: #e7e7e7;
-    --silver: #eeeeee;
+    --light-silver: #ececec;
+    --silver: #dddddd;
 }
 
 .mCS_rightPos .mCSB_container {
@@ -106,7 +130,7 @@ a {
 }
 
 .mCSB_scrollTools {
-    z-index: 10;
+    z-index: 1000;
     width: 8px;
 }
 
@@ -135,7 +159,7 @@ a {
 }
 
 .slider .sliderUl>li {
-    z-index: 4;
+    z-index: 3;
     display: none;
 }
 
@@ -152,14 +176,25 @@ a {
     font-size: 14px;
 }
 
-.header-menu .nav .nav-item .nav-link.active {
-    color: #f1c40f !important;
-    text-shadow: none !important;
+.header-menu .nav .nav-item.active .nav-link {
+    color: #1de0e7 !important;
 }
 
 .header-menu .nav .nav-item .nav-link.special {
     color: #da102b !important;
-    text-shadow: none !important;
+}
+
+.header-menu .nav .nav-item .nav-link .nav-link-triangle {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgb(255, 255, 255);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
 }
 
 .cart-badge {
@@ -168,7 +203,7 @@ a {
 }
 
 .sliderOperationBox {
-    z-index: 5;
+    z-index: 4;
     top: 480px;
     right: 60px;
 }
@@ -194,6 +229,7 @@ a {
     max-height: 400px;
     top: 40px;
     box-shadow: 0px 2px 8px 2px #505050;
+    z-index: 6;
 }
 
 .header-cartBox .header-cart::before {
@@ -214,6 +250,7 @@ a {
     width: 150px;
     box-shadow: 0 1px 4px 1px #272727;
     padding: 4px 8px;
+    z-index: 10;
 }
 
 .header-userBox .header-user-msg::before {
@@ -227,6 +264,103 @@ a {
     top: -8px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.t-header-container {
+    top: 20px;
+    z-index: 8;
+}
+
+.c-mega-menu {
+    display: none;
+    position: absolute;
+    top: 104%;
+    left: 50%;
+    width: 100vw;
+    max-width: 100%;
+    height: 78vh;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 10;
+}
+
+
+/* .nav-item:first-child .c-mega-menu {
+    display: block;
+} */
+
+.c-mega-menu .c-mega-sub-menu .c-mega-sub-menu-item {
+    color: #666;
+    cursor: default;
+    border-bottom: 2px solid #fff;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.c-mega-menu .c-mega-sub-menu .c-mega-sub-menu-item .c-mega-sub-menu-title>img {
+    max-width: 22px;
+    max-height: 22px;
+    opacity: 0.6;
+}
+
+.c-mega-menu .c-mega-sub-menu .c-mega-sub-menu-item.active {
+    color: #303030;
+    border-bottom: 2px solid rgb(85, 177, 252);
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.c-mega-menu .c-mega-sub-menu .c-mega-sub-menu-item.active img {
+    opacity: 1;
+}
+
+.c-mega-menu-seperator {
+    height: 260px !important;
+}
+
+.c-mega-menu-cat-list a {
+    color: #888;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.c-mega-menu-cat-list li a:hover {
+    color: #222;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.c-mega-menu-top-brand li,
+.c-mega-menu-top-brand li a {
+    width: 200px;
+}
+
+.c-mega-menu-top-brand li img {
+    width: 100%;
+    height: 100%;
+}
+
+.c-mega-sub-menu-item .c-mega-sub-menu-body {
+    display: none;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.c-mega-sub-menu-item.active .c-mega-sub-menu-body {
+    display: flex !important;
+}
+
+.c-mega-menu-right {
+    height: 60vh;
 }
 
 

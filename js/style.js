@@ -1,35 +1,35 @@
 ﻿/************Header********** */
-var timeout;
+var headerTimeout;
 $('.header-cartBox').on('mouseenter', function() {
-    visibleTag('.header-cart', 'show')
+    visibleCartTag('.header-cart', 'show')
 });
 
 $(".header-cartBox").on("mouseleave", function() {
-    visibleTag('.header-cart', 'hidden')
+    visibleCartTag('.header-cart', 'hidden')
 });
 
 $('.header-cart').on('mouseenter', function() {
-    clearTimeout(timeout);
+    clearTimeout(headerTimeout);
 });
 
 $(".header-cart").on("mouseleave", function() {
-    visibleTag('.header-cart', 'hidden')
+    visibleCartTag('.header-cart', 'hidden')
 });
 
 $('.header-userBox').on('mouseenter', function() {
-    visibleTag('.header-user-msg', 'show')
+    visibleCartTag('.header-user-msg', 'show')
 });
 
 $('.header-userBox').on("mouseleave", function() {
-    visibleTag('.header-user-msg', 'hidden')
+    visibleCartTag('.header-user-msg', 'hidden')
 });
 
-function visibleTag(tag, status = '') {
+function visibleCartTag(tag, status = '') {
     if (status == 'show') {
         $(tag).fadeIn();
     }
     if (status == 'hidden') {
-        timeout = setTimeout(() => {
+        headerTimeout = setTimeout(() => {
             $(tag).fadeOut();
         }, 1000);
     }
@@ -80,4 +80,44 @@ $('.prevSlide').click(function() {
 });
 /*********/
 
+/******Menu***** */
+var menuTimeout;
+
+function openMenu(tag) {
+    clearTimeout(menuTimeout);
+    if (!$(tag).hasClass('active')) {
+        $('.header-menu .nav-item').removeClass('active');
+        $('.header-menu .nav-item .c-mega-menu').fadeOut();
+        $('.header-menu .nav-item .nav-link-triangle').fadeOut();
+        $(tag).addClass('active');
+        $('.c-mega-menu', tag).fadeIn();
+        $('.nav-link-triangle', tag).fadeIn();
+        $('.c-mega-sub-menu-item').removeClass('active');
+        $('.c-mega-sub-menu-item:first-child', tag).addClass('active');
+    }
+}
+
+$('.header-menu .nav-item').mouseleave(function() {
+    menuTimeout = setTimeout(() => {
+        $('.header-menu .nav-item').removeClass('active');
+        $('.header-menu .nav-item .c-mega-menu').fadeOut();
+        $('.header-menu .nav-item .nav-link-triangle').fadeOut();
+    }, 500);
+});
+
+$('.c-mega-menu').mouseenter(function(e) {
+    clearTimeout(menuTimeout);
+});
+
+function showSubMenu(tag) {
+    const parentTag = $(tag).parent('.c-mega-sub-menu-item')
+    if (!$(parentTag).hasClass('active')) {
+        $('.c-mega-sub-menu-item').removeClass('active');
+        $(parentTag).addClass('active');
+    }
+}
+
+
+
+/****** */
 /************************** */
