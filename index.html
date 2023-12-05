@@ -21,477 +21,708 @@
     <!-- bodyBox -->
     <div class="bodyBox mCustomScrollbar HoverSC mCS_noMargin mCS_rightPos overflow-hidden h-100" data-mcs-theme="light">
 
-        <!-- slider -->
-        <div class="sliderBox position-relative d-flex justify-content-center">
-            <div class="container header-container mt-4 p-0">
-                <!-- position-absolute -->
-                <div class="t-header-container container">
-                    <div class="t-header-container-box d-flex align-items-start justify-content-between">
-                        <div class="r-header-container text-white d-flex align-items-start justify-content-start">
-                            <div class="d-flex align-items-center gap-1">
-                                <div class="header-cartBox d-flex align-items-center position-relative">
-                                    <span class="cart-badge badge position-absolute translate-middle rounded-pill bg-danger fs-10 pt-1">0</span>
-                                    <i class="icon-basket-thin fs-3 text-shadow-dark"></i>
-                                    <span class="fs-14 text-shadow-dark">سبد خرید</span>
+        <!-- s-header -->
+        <section class="s-header vh-100">
+            <!-- headerBox -->
+            <div class="headerBox position-relative d-flex justify-content-center">
+                <div class="container header-container mt-4 p-0">
+                    <div class="t-header-container container">
+                        <div class="t-header-container-box d-flex align-items-start justify-content-between">
+                            <div class="r-header-container text-white d-flex align-items-start justify-content-start">
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="header-cartBox d-flex align-items-center position-relative">
+                                        <span class="cart-badge badge position-absolute translate-middle rounded-pill bg-danger fs-10 pt-1">0</span>
+                                        <i class="icon-basket-thin fs-3 text-shadow-dark"></i>
+                                        <span class="fs-14 text-shadow-dark">سبد خرید</span>
 
-                                    <div class="header-cart position-absolute start-0 rounded-1 bg-white">
-                                        <div class="d-flex justify-content-center align-items-center flex-column py-5 gap-2">
-                                            <img src="img/icon/cart-empty.svg" alt="" srcset="">
-                                            <span class="fs-5 text-dark mt-1">سبد خرید شما خالی است.</span>
+                                        <div class="header-cart position-absolute start-0 rounded-1 bg-white">
+                                            <div class="d-flex justify-content-center align-items-center flex-column py-5 gap-2">
+                                                <img src="img/icon/cart-empty.svg" alt="" srcset="">
+                                                <span class="fs-5 text-dark mt-1">سبد خرید شما خالی است.</span>
 
-                                            <span class="text-muted mt-5">شاید این صفحات برای شما جذاب باشند</span>
-                                            <ul class="list-unstyled d-flex justify-content-center align-items-center gap-2 fs-13">
-                                                <li><a href="#" class="text-info">حراج استایل</a></li>
-                                                <div class="vr-seperator bg-secondary vr-seperator-sm"></div>
-                                                <li><a href="#" class="text-info">برندهای برتر</a></li>
-                                                <div class="vr-seperator bg-secondary vr-seperator-sm"></div>
-                                                <li><a href="#" class="text-info">خانه طراحان ایرانی</a></li>
-                                            </ul>
+                                                <span class="text-muted mt-5">شاید این صفحات برای شما جذاب باشند</span>
+                                                <ul class="list-unstyled d-flex justify-content-center align-items-center gap-2 fs-13">
+                                                    <li><a href="#" class="text-info">حراج استایل</a></li>
+                                                    <div class="vr-seperator bg-secondary vr-seperator-sm"></div>
+                                                    <li><a href="#" class="text-info">برندهای برتر</a></li>
+                                                    <div class="vr-seperator bg-secondary vr-seperator-sm"></div>
+                                                    <li><a href="#" class="text-info">خانه طراحان ایرانی</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vr-seperator vr-seperator-md ms-2 box-shadow-dark"></div>
+                                    <div class="header-userBox d-flex align-items-center position-relative">
+                                        <i class="icon-login-thin fs-3 p-0 m-0 text-shadow-dark"></i>
+                                        <span class="fs-14 text-shadow-dark">وارد شوید</span>
+
+                                        <div class="header-user-msg position-absolute bg-white">
+                                            <span class="text-dark fs-12 d-block w-100 text-center">وارد حساب کاربری خود
+                                                شوید.</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="vr-seperator vr-seperator-md ms-2 box-shadow-dark"></div>
-                                <div class="header-userBox d-flex align-items-center position-relative">
-                                    <i class="icon-login-thin fs-3 p-0 m-0 text-shadow-dark"></i>
-                                    <span class="fs-14 text-shadow-dark">وارد شوید</span>
+                            </div>
 
-                                    <div class="header-user-msg position-absolute bg-white">
-                                        <span class="text-dark fs-12 d-block w-100 text-center">وارد حساب کاربری خود شوید.</span>
-                                    </div>
+
+                            <div class="c-header-container d-flex flex-column px-3">
+                                <div class="header-log px-5 pb-4 border-1 border-bottom border-white mb-3 d-flex justify-content-center">
+                                    <img src="./img/icon/logo.svg" alt="" srcset="">
+                                </div>
+
+                                <!-- header-menu -->
+                                <div class="header-menu">
+                                    <nav class="nav d-flex align-items-center justify-content-center gap-1">
+                                        <li class="nav-item" onmouseenter="openMenu(this)">
+                                            <a class="nav-link text-white text-shadow-dark position-relative" href="#">
+                                                زنانه
+                                                <span class="nav-link-triangle"></span>
+                                            </a>
+                                            <div class="c-mega-menu position-absolute container bg-white p-0">
+
+                                                <ul class="c-mega-sub-menu border-1 border-bottom border-muted list-unstyled d-flex justify-content-center align-items-center position-relative">
+                                                    <li class="c-mega-sub-menu-item fs-15 ">
+
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/dress.png" alt="" srcset="">
+                                                            <span>لباس</span>
+                                                        </div>
+
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <div class="c-mega-menu-right mCustomScrollbar col-6">
+                                                                    <div class="col-12 d-flex flex-wrap px-3 pb-1">
+                                                                        <div class="col-4 d-flex flex-column align-items-start">
+                                                                            <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
+                                                                            <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
+                                                                                <li class="py-2"><a href="#">تی شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">تی شرت </a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن
+                                                                                        1</a></li>
+                                                                                <li class="py-2"><a href="#">شلوار 1</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت 1</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+
+                                                                        <div class="col-4 d-flex flex-column align-items-start">
+                                                                            <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
+                                                                            <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
+                                                                                <li class="py-2"><a href="#">تی شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">تی شرت </a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن
+                                                                                        1</a></li>
+                                                                                <li class="py-2"><a href="#">شلوار 1</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت 1</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+
+                                                                        <div class="col-4 d-flex flex-column align-items-start">
+                                                                            <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
+                                                                            <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
+                                                                                <li class="py-2"><a href="#">تی شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار 1</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت 1</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="vr-seperator c-mega-menu-seperator align-self-start mt-4 bg-silver col-1">
+                                                                </div>
+                                                                <div class="c-mega-menu-left col-5 px-4" style="height: 400px;">
+                                                                    <h6 class="ps-2">برترین برندهای لباس زنانه</h6>
+                                                                    <ul class="c-mega-menu-top-brand d-flex col-12 flex-wrap list-unstyled p-0 m-0">
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/1.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/2.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/3.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/4.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/bag.png" alt="" srcset="">
+                                                            <span>کیف</span>
+                                                        </div>
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <h1>کیف زنانه</h1>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/shoes.png" alt="" srcset="">
+                                                            <span>کفش</span>
+                                                        </div>
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <h1>کفش زنانه</h1>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/sport.png" alt="" srcset="">
+                                                            <span>ورزشی</span>
+                                                        </div>
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <h1>ورزشی زنانه</h1>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item" onmouseenter="openMenu(this)">
+                                            <a class="nav-link text-white text-shadow-dark position-relative" href="#">
+                                                مردانه
+                                                <span class="nav-link-triangle"></span>
+                                            </a>
+
+                                            <div class="c-mega-menu position-absolute container bg-white p-0">
+                                                <ul class="c-mega-sub-menu border-1 border-bottom border-muted list-unstyled d-flex justify-content-center align-items-center position-relative">
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/dress.png" alt="" srcset="">
+                                                            <span>لباس</span>
+                                                        </div>
+
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <div class="c-mega-menu-right mCustomScrollbar col-6">
+                                                                    <div class="col-12 d-flex flex-wrap px-3 pb-1">
+                                                                        <div class="col-4 d-flex flex-column align-items-start">
+                                                                            <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
+                                                                            <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
+                                                                                <li class="py-2"><a href="#">تی شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">تی شرت </a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن
+                                                                                        1</a></li>
+                                                                                <li class="py-2"><a href="#">شلوار 1</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت 1</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+
+                                                                        <div class="col-4 d-flex flex-column align-items-start">
+                                                                            <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
+                                                                            <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
+                                                                                <li class="py-2"><a href="#">تی شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">تی شرت </a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن
+                                                                                        1</a></li>
+                                                                                <li class="py-2"><a href="#">شلوار 1</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت 1</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+
+                                                                        <div class="col-4 d-flex flex-column align-items-start">
+                                                                            <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
+                                                                            <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
+                                                                                <li class="py-2"><a href="#">تی شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار 1</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت 1</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="vr-seperator c-mega-menu-seperator align-self-start mt-4 bg-silver col-1">
+                                                                </div>
+                                                                <div class="c-mega-menu-left col-5 px-4" style="height: 400px;">
+                                                                    <h6 class="ps-2">برترین برندهای لباس مردانه</h6>
+                                                                    <ul class="c-mega-menu-top-brand d-flex col-12 flex-wrap list-unstyled p-0 m-0">
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/1.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/2.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/3.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/4.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/bag.png" alt="" srcset="">
+                                                            <span>کیف</span>
+                                                        </div>
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <h1>کیف مردانه</h1>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/shoes.png" alt="" srcset="">
+                                                            <span>کفش</span>
+                                                        </div>
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <h1>کفش مردانه</h1>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/sport.png" alt="" srcset="">
+                                                            <span>ورزشی</span>
+                                                        </div>
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <h1>ورزشی مردانه</h1>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item" onmouseenter="openMenu(this)">
+                                            <a class="nav-link text-white text-shadow-dark position-relative" href="#">
+                                                بچگانه
+                                                <span class="nav-link-triangle"></span>
+                                            </a>
+                                            <div class="c-mega-menu position-absolute container bg-white p-0">
+                                                <ul class="c-mega-sub-menu border-1 border-bottom border-muted list-unstyled d-flex justify-content-center align-items-center position-relative">
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/dress.png" alt="" srcset="">
+                                                            <span>لباس</span>
+                                                        </div>
+
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <div class="c-mega-menu-right mCustomScrollbar col-6">
+                                                                    <div class="col-12 d-flex flex-wrap px-3 pb-1">
+                                                                        <div class="col-4 d-flex flex-column align-items-start">
+                                                                            <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
+                                                                            <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
+                                                                                <li class="py-2"><a href="#">تی شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">تی شرت </a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن
+                                                                                        1</a></li>
+                                                                                <li class="py-2"><a href="#">شلوار 1</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت 1</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+
+                                                                        <div class="col-4 d-flex flex-column align-items-start">
+                                                                            <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
+                                                                            <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
+                                                                                <li class="py-2"><a href="#">تی شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">تی شرت </a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن
+                                                                                        1</a></li>
+                                                                                <li class="py-2"><a href="#">شلوار 1</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت 1</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+
+                                                                        <div class="col-4 d-flex flex-column align-items-start">
+                                                                            <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
+                                                                            <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
+                                                                                <li class="py-2"><a href="#">تی شرت</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">پیراهن</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شلوار 1</a>
+                                                                                </li>
+                                                                                <li class="py-2"><a href="#">شرت 1</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="vr-seperator c-mega-menu-seperator align-self-start mt-4 bg-silver col-1">
+                                                                </div>
+                                                                <div class="c-mega-menu-left col-5 px-4" style="height: 400px;">
+                                                                    <h6 class="ps-2">برترین برندهای لباس بچگانه</h6>
+                                                                    <ul class="c-mega-menu-top-brand d-flex col-12 flex-wrap list-unstyled p-0 m-0">
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/1.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/2.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/3.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                        <li class="p-2 col-6">
+                                                                            <a href="#"><img src="img/top-brand/4.jpg" alt="" srcset=""></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/bag.png" alt="" srcset="">
+                                                            <span>کیف</span>
+                                                        </div>
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <h1>کیف بچگانه</h1>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/shoes.png" alt="" srcset="">
+                                                            <span>کفش</span>
+                                                        </div>
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <h1>کفش بچگانه</h1>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="c-mega-sub-menu-item fs-15">
+                                                        <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
+                                                            <img src="./img/menu-icon/sport.png" alt="" srcset="">
+                                                            <span>ورزشی</span>
+                                                        </div>
+                                                        <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
+                                                            <div class="d-flex align-items-start justify-content-center w-100">
+                                                                <h1>ورزشی بچگانه</h1>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item" onmouseenter="openMenu(this)">
+                                            <a class="nav-link text-white text-shadow-dark position-relative" href="#">زیبایی و سلامت</a>
+                                        </li>
+                                        <div class="vr-seperator vr-seperator-md mx-1 box-shadow-dark"></div>
+                                        <li class="nav-item" onmouseenter="openMenu(this)">
+                                            <a class="nav-link special text-white" href="#">حراج استایل</a>
+                                        </li>
+                                        <li class="nav-item" onmouseenter="openMenu(this)">
+                                            <a class="nav-link text-white text-shadow-dark position-relative" href="#">مد پایدار</a>
+                                        </li>
+                                    </nav>
                                 </div>
                             </div>
-                        </div>
+                            <!-- End header-menu -->
 
 
-                        <div class="c-header-container d-flex flex-column px-3">
-                            <div class="header-log px-5 pb-4 border-1 border-bottom border-white mb-3 d-flex justify-content-center">
-                                <img src="./img/icon/logo.svg" alt="" srcset="">
-                            </div>
-
-                            <!-- header-menu -->
-                            <div class="header-menu">
-                                <nav class="nav d-flex align-items-center justify-content-center gap-1">
-                                    <li class="nav-item" onmouseenter="openMenu(this)">
-                                        <a class="nav-link text-white text-shadow-dark position-relative" href="#">
-                                            زنانه
-                                            <span class="nav-link-triangle"></span>
-                                        </a>
-                                        <div class="c-mega-menu position-absolute container bg-white p-0">
-
-                                            <ul class="c-mega-sub-menu border-1 border-bottom border-muted list-unstyled d-flex justify-content-center align-items-center position-relative">
-                                                <li class="c-mega-sub-menu-item fs-15 ">
-
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/dress.png" alt="" srcset="">
-                                                        <span>لباس</span>
-                                                    </div>
-
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <div class="c-mega-menu-right mCustomScrollbar col-6">
-                                                                <div class="col-12 d-flex flex-wrap px-3 pb-1">
-                                                                    <div class="col-4 d-flex flex-column align-items-start">
-                                                                        <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
-                                                                        <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
-                                                                            <li class="py-2"><a href="#">تی شرت</a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار</a></li>
-                                                                            <li class="py-2"><a href="#">شرت</a></li>
-                                                                            <li class="py-2"><a href="#">تی شرت </a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن 1</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار 1</a></li>
-                                                                            <li class="py-2"><a href="#">شرت 1</a></li>
-                                                                        </ul>
-                                                                    </div>
-
-                                                                    <div class="col-4 d-flex flex-column align-items-start">
-                                                                        <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
-                                                                        <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
-                                                                            <li class="py-2"><a href="#">تی شرت</a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار</a></li>
-                                                                            <li class="py-2"><a href="#">شرت</a></li>
-                                                                            <li class="py-2"><a href="#">تی شرت </a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن 1</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار 1</a></li>
-                                                                            <li class="py-2"><a href="#">شرت 1</a></li>
-                                                                        </ul>
-                                                                    </div>
-
-                                                                    <div class="col-4 d-flex flex-column align-items-start">
-                                                                        <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
-                                                                        <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
-                                                                            <li class="py-2"><a href="#">تی شرت</a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار 1</a></li>
-                                                                            <li class="py-2"><a href="#">شرت 1</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="vr-seperator c-mega-menu-seperator align-self-start mt-4 bg-silver col-1"></div>
-                                                            <div class="c-mega-menu-left col-5 px-4" style="height: 400px;">
-                                                                <h6 class="ps-2">برترین برندهای لباس زنانه</h6>
-                                                                <ul class="c-mega-menu-top-brand d-flex col-12 flex-wrap list-unstyled p-0 m-0">
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/1.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/2.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/3.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/4.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </li>
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/bag.png" alt="" srcset="">
-                                                        <span>کیف</span>
-                                                    </div>
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <h1>کیف زنانه</h1>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/shoes.png" alt="" srcset="">
-                                                        <span>کفش</span>
-                                                    </div>
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <h1>کفش زنانه</h1>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/sport.png" alt="" srcset="">
-                                                        <span>ورزشی</span>
-                                                    </div>
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <h1>ورزشی زنانه</h1>
-                                                        </div>
-                                                    </div>
-
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item" onmouseenter="openMenu(this)">
-                                        <a class="nav-link text-white text-shadow-dark position-relative" href="#">
-                                            مردانه
-                                            <span class="nav-link-triangle"></span>
-                                        </a>
-
-                                        <div class="c-mega-menu position-absolute container bg-white p-0">
-                                            <ul class="c-mega-sub-menu border-1 border-bottom border-muted list-unstyled d-flex justify-content-center align-items-center position-relative">
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/dress.png" alt="" srcset="">
-                                                        <span>لباس</span>
-                                                    </div>
-
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <div class="c-mega-menu-right mCustomScrollbar col-6">
-                                                                <div class="col-12 d-flex flex-wrap px-3 pb-1">
-                                                                    <div class="col-4 d-flex flex-column align-items-start">
-                                                                        <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
-                                                                        <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
-                                                                            <li class="py-2"><a href="#">تی شرت</a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار</a></li>
-                                                                            <li class="py-2"><a href="#">شرت</a></li>
-                                                                            <li class="py-2"><a href="#">تی شرت </a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن 1</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار 1</a></li>
-                                                                            <li class="py-2"><a href="#">شرت 1</a></li>
-                                                                        </ul>
-                                                                    </div>
-
-                                                                    <div class="col-4 d-flex flex-column align-items-start">
-                                                                        <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
-                                                                        <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
-                                                                            <li class="py-2"><a href="#">تی شرت</a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار</a></li>
-                                                                            <li class="py-2"><a href="#">شرت</a></li>
-                                                                            <li class="py-2"><a href="#">تی شرت </a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن 1</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار 1</a></li>
-                                                                            <li class="py-2"><a href="#">شرت 1</a></li>
-                                                                        </ul>
-                                                                    </div>
-
-                                                                    <div class="col-4 d-flex flex-column align-items-start">
-                                                                        <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
-                                                                        <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
-                                                                            <li class="py-2"><a href="#">تی شرت</a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار 1</a></li>
-                                                                            <li class="py-2"><a href="#">شرت 1</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="vr-seperator c-mega-menu-seperator align-self-start mt-4 bg-silver col-1"></div>
-                                                            <div class="c-mega-menu-left col-5 px-4" style="height: 400px;">
-                                                                <h6 class="ps-2">برترین برندهای لباس مردانه</h6>
-                                                                <ul class="c-mega-menu-top-brand d-flex col-12 flex-wrap list-unstyled p-0 m-0">
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/1.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/2.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/3.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/4.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </li>
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/bag.png" alt="" srcset="">
-                                                        <span>کیف</span>
-                                                    </div>
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <h1>کیف مردانه</h1>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/shoes.png" alt="" srcset="">
-                                                        <span>کفش</span>
-                                                    </div>
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <h1>کفش مردانه</h1>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/sport.png" alt="" srcset="">
-                                                        <span>ورزشی</span>
-                                                    </div>
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <h1>ورزشی مردانه</h1>
-                                                        </div>
-                                                    </div>
-
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item" onmouseenter="openMenu(this)">
-                                        <a class="nav-link text-white text-shadow-dark position-relative" href="#">
-                                            بچگانه
-                                            <span class="nav-link-triangle"></span>
-                                        </a>
-                                        <div class="c-mega-menu position-absolute container bg-white p-0">
-                                            <ul class="c-mega-sub-menu border-1 border-bottom border-muted list-unstyled d-flex justify-content-center align-items-center position-relative">
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/dress.png" alt="" srcset="">
-                                                        <span>لباس</span>
-                                                    </div>
-
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <div class="c-mega-menu-right mCustomScrollbar col-6">
-                                                                <div class="col-12 d-flex flex-wrap px-3 pb-1">
-                                                                    <div class="col-4 d-flex flex-column align-items-start">
-                                                                        <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
-                                                                        <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
-                                                                            <li class="py-2"><a href="#">تی شرت</a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار</a></li>
-                                                                            <li class="py-2"><a href="#">شرت</a></li>
-                                                                            <li class="py-2"><a href="#">تی شرت </a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن 1</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار 1</a></li>
-                                                                            <li class="py-2"><a href="#">شرت 1</a></li>
-                                                                        </ul>
-                                                                    </div>
-
-                                                                    <div class="col-4 d-flex flex-column align-items-start">
-                                                                        <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
-                                                                        <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
-                                                                            <li class="py-2"><a href="#">تی شرت</a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار</a></li>
-                                                                            <li class="py-2"><a href="#">شرت</a></li>
-                                                                            <li class="py-2"><a href="#">تی شرت </a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن 1</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار 1</a></li>
-                                                                            <li class="py-2"><a href="#">شرت 1</a></li>
-                                                                        </ul>
-                                                                    </div>
-
-                                                                    <div class="col-4 d-flex flex-column align-items-start">
-                                                                        <h6 class="d-flex align-items-center">خرید لباس زنانه <i class="icon-left-open-1"></i></h6>
-                                                                        <ul class="c-mega-menu-cat-list d-flex col-12 flex-column list-unstyled p-0 m-0">
-                                                                            <li class="py-2"><a href="#">تی شرت</a></li>
-                                                                            <li class="py-2"><a href="#">پیراهن</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار</a></li>
-                                                                            <li class="py-2"><a href="#">شلوار 1</a></li>
-                                                                            <li class="py-2"><a href="#">شرت 1</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="vr-seperator c-mega-menu-seperator align-self-start mt-4 bg-silver col-1"></div>
-                                                            <div class="c-mega-menu-left col-5 px-4" style="height: 400px;">
-                                                                <h6 class="ps-2">برترین برندهای لباس بچگانه</h6>
-                                                                <ul class="c-mega-menu-top-brand d-flex col-12 flex-wrap list-unstyled p-0 m-0">
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/1.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/2.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/3.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                    <li class="p-2 col-6">
-                                                                        <a href="#"><img src="img/top-brand/4.jpg" alt="" srcset=""></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </li>
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/bag.png" alt="" srcset="">
-                                                        <span>کیف</span>
-                                                    </div>
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <h1>کیف بچگانه</h1>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/shoes.png" alt="" srcset="">
-                                                        <span>کفش</span>
-                                                    </div>
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <h1>کفش بچگانه</h1>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="c-mega-sub-menu-item fs-15">
-                                                    <div class="c-mega-sub-menu-title d-flex align-items-center justify-content-center px-4 py-2 gap-2" onmouseenter="showSubMenu(this)">
-                                                        <img src="./img/menu-icon/sport.png" alt="" srcset="">
-                                                        <span>ورزشی</span>
-                                                    </div>
-                                                    <div class="c-mega-sub-menu-body position-absolute vw-100" style="height: 600px;">
-                                                        <div class="d-flex align-items-start justify-content-center w-100">
-                                                            <h1>ورزشی بچگانه</h1>
-                                                        </div>
-                                                    </div>
-
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item" onmouseenter="openMenu(this)">
-                                        <a class="nav-link text-white text-shadow-dark position-relative" href="#">زیبایی و سلامت</a>
-                                    </li>
-                                    <div class="vr-seperator vr-seperator-md mx-1 box-shadow-dark"></div>
-                                    <li class="nav-item" onmouseenter="openMenu(this)">
-                                        <a class="nav-link special text-white" href="#">حراج استایل</a>
-                                    </li>
-                                    <li class="nav-item" onmouseenter="openMenu(this)">
-                                        <a class="nav-link text-white text-shadow-dark position-relative" href="#">مد پایدار</a>
-                                    </li>
-                                </nav>
-                            </div>
-                        </div>
-                        <!-- header-menu -->
-
-
-                        <div class="l-header-container d-flex justify-content-end align-items-start">
-                            <div class="searchBox d-flex align-items-center border-bottom border-1 border-silver pe-3">
-                                <i class="icon-search-thin fs-3 text-white text-shadow-dark"></i>
-                                <span class="text-silver fs-13 text-shadow-dark">جستجو محصولات از 290 برند</span>
+                            <div class="l-header-container d-flex justify-content-end align-items-start">
+                                <div class="searchBox d-flex align-items-center border-bottom border-1 border-silver pe-3">
+                                    <i class="icon-search-thin fs-3 text-white text-shadow-dark"></i>
+                                    <span class="text-silver fs-13 text-shadow-dark">جستجو محصولات از 290 برند</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- t-header-container -->
                 </div>
-                <!-- t-header-container -->
-            </div>
 
-
-
-
-
-
-            <div class="slider position-absolute top-0 start-0">
-                <div class="position-relative">
-                    <ul class="sliderUl border-warning m-0 p-0 d-flex position-relative">
-                        <li class="list-unstyled m-0 position-absolute vh-100 vw-100" id="slide-0">
-                            <img src="./img/slide-1.jpg" alt="" srcset="">
-                        </li>
-                        <li class="list-unstyled m-0 position-absolute vh-100 vw-100" id="slide-1">
-                            <img src="./img/slide-2.jpg" alt="" srcset="">
-                        </li>
-                        <li class="list-unstyled m-0 position-absolute vh-100 vw-100" id="slide-2">
-                            <img src="./img/slide-3.jpg" alt="" srcset="">
-                        </li>
-                    </ul>
-
-                    <div class="sliderOperationBox position-absolute">
-                        <ul class="list-unstyled sliderPaginateBox d-flex gap-2 d-flex align-items-center justify-content-center">
-                            <li class="sliderPaginateItem rounded-circle active" id="sliderPaginateItem-0"></li>
-                            <li class="sliderPaginateItem rounded-circle" id="sliderPaginateItem-1"></li>
-                            <li class="sliderPaginateItem rounded-circle" id="sliderPaginateItem-2"></li>
+                <!-- Slider -->
+                <div class="slider position-absolute top-0 start-0">
+                    <div class="position-relative">
+                        <ul class="sliderUl border-warning m-0 p-0 d-flex position-relative">
+                            <li class="list-unstyled m-0 position-absolute vh-100 vw-100" id="slide-0">
+                                <img src="./img/slide-1.jpg" alt="" srcset="">
+                            </li>
+                            <li class="list-unstyled m-0 position-absolute vh-100 vw-100" id="slide-1">
+                                <img src="./img/slide-2.jpg" alt="" srcset="">
+                            </li>
+                            <li class="list-unstyled m-0 position-absolute vh-100 vw-100" id="slide-2">
+                                <img src="./img/slide-3.jpg" alt="" srcset="">
+                            </li>
                         </ul>
-                        <div class="sliderBtnBox d-flex justify-content-between gap-4">
-                            <i class="prevSlide icon-arrow-right text-white text-shadow-dark" role="button"></i>
-                            <i class="nextSlide icon-arrow-left text-white text-shadow-dark" role="button"></i>
-                        </div>
 
+                        <div class="sliderOperationBox position-absolute">
+                            <ul class="list-unstyled sliderPaginateBox d-flex gap-2 d-flex align-items-center justify-content-center">
+                                <li class="sliderPaginateItem rounded-circle active" id="sliderPaginateItem-0"></li>
+                                <li class="sliderPaginateItem rounded-circle" id="sliderPaginateItem-1"></li>
+                                <li class="sliderPaginateItem rounded-circle" id="sliderPaginateItem-2"></li>
+                            </ul>
+                            <div class="sliderBtnBox d-flex justify-content-between gap-4">
+                                <i class="prevSlide icon-arrow-right text-white text-shadow-dark" role="button"></i>
+                                <i class="nextSlide icon-arrow-left text-white text-shadow-dark" role="button"></i>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+                <!-- End Slider -->
             </div>
-        </div>
-        <!-- slider -->
+            <!-- End headerBox -->
+        </section>
+        <!-- End s-header -->
 
-        <div style="height: 800px; width:100%"></div>
+        <!-- s-weekly-style -->
+        <section class="s-weekly-style vh-100 container py-5 mt-5 position-relative">
+            <div class="s-weekly-style-title d-flex justify-content-between align-items-center position-relative">
+                <h3 class="IRYekan fw-bold bg-white py-2">
+                    اســتایلـــ هفتـه
+                </h3>
+
+                <button type="button" class="btn btn-outline-dark rounded-0 px-4 py-2">خرید همه</button>
+            </div>
+
+            <!-- s-weekly-style-box -->
+            <div class="s-weekly-style-box h-100 d-flex align-items-center">
+
+                <div class="s-weekly-style-main-pic my-4 position-relative">
+                    <img src="./img/weekly/main.jpg" alt="">
+                </div>
+
+                <div class="w-100 d-flex align-items-center mx-4 gap-3 overflow-hidden position-relative">
+
+                    <div class="d-flex align-items-center">
+                        <!-- s-weekly-style-items -->
+                        <div class="s-weekly-style-items d-flex flex-column position-relative bg-white">
+                            <div class="s-weekly-style-items-top position-relative">
+                                <div class="s-weekly-style-overly"></div>
+                                <span class="s-weekly-style-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                <div class="s-weekly-style-items-pic d-flex justify-content-center">
+                                    <img src="img/weekly/1.jpg" alt="">
+                                </div>
+                                <div class="s-weekly-style-items-size position-absolute">
+                                    <div class="s-weekly-style-items-size-top d-flex justify-content-between">
+                                        <span class="bg-white d-inline-block p-2 fs-14">تک سایز</span>
+                                        <span class="s-weekly-style-items-off text-white d-inline-block p-2 fs-14">40%</span>
+                                    </div>
+                                    <div class="bg-white d-flex align-items-center gap-3 p-2 w-100 fs-14">
+                                        <a href="#" class="text-dark">L</a>
+                                        <a href="#" class="text-dark">M</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-weekly-style-items-bottom position-relative bg-white d-flex flex-column gap-2 pt-2">
+                                <a href="#" class="text-dark">مانتو کتی زنانه سرژه مدل 216587 یقه پهن سرشانه پیل...</a>
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <span class="fs-5">1,499,000</span>
+                                    <i class="icon-toman-1 fs-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End s-weekly-style-items -->
+
+                        <!-- s-weekly-style-items -->
+                        <div class="s-weekly-style-items d-flex flex-column position-relative bg-white">
+                            <div class="s-weekly-style-items-top position-relative">
+                                <div class="s-weekly-style-overly"></div>
+                                <span class="s-weekly-style-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                <div class="s-weekly-style-items-pic d-flex justify-content-center">
+                                    <img src="img/weekly/2.jpg" alt="">
+                                </div>
+                                <div class="s-weekly-style-items-size position-absolute">
+                                    <div class="s-weekly-style-items-size-top d-flex justify-content-between">
+                                        <span class="bg-white d-inline-block p-2 fs-14">تک سایز</span>
+                                        <span class="s-weekly-style-items-off text-white d-inline-block p-2 fs-14">40%</span>
+                                    </div>
+                                    <div class="bg-white d-flex align-items-center gap-3 p-2 w-100 fs-14">
+                                        <a href="#" class="text-dark">L</a>
+                                        <a href="#" class="text-dark">M</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-weekly-style-items-bottom position-relative bg-white d-flex flex-column gap-2 pt-2">
+                                <a href="#" class="text-dark">مانتو کتی زنانه سرژه مدل 216587 یقه پهن سرشانه پیل...</a>
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <span class="fs-5">1,499,000</span>
+                                    <i class="icon-toman-1 fs-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End s-weekly-style-items -->
+
+                        <!-- s-weekly-style-items -->
+                        <div class="s-weekly-style-items d-flex flex-column position-relative bg-white">
+                            <div class="s-weekly-style-items-top position-relative">
+                                <div class="s-weekly-style-overly"></div>
+                                <span class="s-weekly-style-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                <div class="s-weekly-style-items-pic d-flex justify-content-center">
+                                    <img src="img/weekly/3.jpg" alt="">
+                                </div>
+                                <div class="s-weekly-style-items-size position-absolute">
+                                    <div class="s-weekly-style-items-size-top d-flex justify-content-between">
+                                        <span class="bg-white d-inline-block p-2 fs-14">تک سایز</span>
+
+                                    </div>
+                                    <div class="bg-white d-flex align-items-center gap-3 p-2 w-100 fs-14">
+                                        <a href="#" class="text-dark">L</a>
+                                        <a href="#" class="text-dark">M</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-weekly-style-items-bottom position-relative bg-white d-flex flex-column gap-2 pt-2">
+                                <a href="#" class="text-dark">مانتو کتی زنانه سرژه مدل 216587 یقه پهن سرشانه پیل...</a>
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <span class="fs-5">1,499,000</span>
+                                    <i class="icon-toman-1 fs-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End s-weekly-style-items -->
+
+                        <!-- s-weekly-style-items -->
+                        <div class="s-weekly-style-items d-flex flex-column position-relative bg-white">
+                            <div class="s-weekly-style-items-top position-relative">
+                                <div class="s-weekly-style-overly"></div>
+                                <span class="s-weekly-style-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                <div class="s-weekly-style-items-pic d-flex justify-content-center">
+                                    <img src="img/weekly/4.jpg" alt="">
+                                </div>
+                                <div class="s-weekly-style-items-size position-absolute">
+                                    <div class="s-weekly-style-items-size-top d-flex justify-content-between">
+                                        <span class="bg-white d-inline-block p-2 fs-14">تک سایز</span>
+                                        <span class="s-weekly-style-items-off text-white d-inline-block p-2 fs-14">40%</span>
+                                    </div>
+                                    <div class="bg-white d-flex align-items-center gap-3 p-2 w-100 fs-14">
+                                        <a href="#" class="text-dark">L</a>
+                                        <a href="#" class="text-dark">M</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-weekly-style-items-bottom position-relative bg-white d-flex flex-column gap-2 pt-2">
+                                <a href="#" class="text-dark">مانتو کتی زنانه سرژه مدل 216587 یقه پهن سرشانه پیل...</a>
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <span class="fs-5">1,499,000</span>
+                                    <i class="icon-toman-1 fs-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End s-weekly-style-items -->
+                    </div>
+
+
+                    <div class="s-weekly-style-btn-box d-flex justify-content-between align-items-center w-100 position-absolute">
+                        <span class="px-2 py-3 text-muted" role="button"><i class="icon-right fs-3"></i></span>
+                        <span class="px-2 py-3 text-muted" role="button"><i class="icon-left fs-3"></i></span>
+                    </div>
+
+                </div>
+
+                <!-- <div class="h-100 w-100 d-flex align-items-center ms-4 me-1 overflow-hidden">
+                    <div class="col-12 d-flex align-items-center">
+                        <div class="bg-danger mx-2 col-3" style="height: 250px;"></div>
+                        <div class="bg-danger mx-2 col-3" style="height: 250px;"></div>
+                        <div class="bg-danger mx-2 col-3" style="height: 250px;"></div>
+                        <div class="bg-danger mx-2 col-3" style="height: 250px;"></div>
+                    </div>
+                </div> -->
+
+            </div>
+            <!-- End s-weekly-style-box -->
+
+            <div class="s-weekly-style-line border border-1 border-dark position-absolute" style="top:30px;"></div>
+        </section>
+        <!-- End s-weekly-style -->
+
+        <br>
+        <br>
+        <br>
+        <br>
 
     </div>
-    <!-- bodyBox -->
+    <!-- End bodyBox -->
 
 
 
