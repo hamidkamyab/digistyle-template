@@ -572,11 +572,12 @@
                     <img src="./img/weekly/main.jpg" alt="">
                 </div>
 
-                <div class="w-100 d-flex align-items-center mx-4 gap-3 overflow-hidden position-relative">
+                <!-- swiper-main -->
+                <div class="swiper-main w-100 d-flex align-items-center mx-4 gap-3 overflow-hidden position-relative">
 
-                    <div class="d-flex align-items-center">
+                    <div class="swiper-container d-flex align-items-center">
                         <!-- s-weekly-style-items -->
-                        <div class="s-weekly-style-items d-flex flex-column position-relative bg-white">
+                        <div class="s-weekly-style-items swiper-items d-flex flex-column position-relative bg-white">
                             <div class="s-weekly-style-items-top position-relative">
                                 <div class="s-weekly-style-overly"></div>
                                 <span class="s-weekly-style-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
@@ -605,7 +606,7 @@
                         <!-- End s-weekly-style-items -->
 
                         <!-- s-weekly-style-items -->
-                        <div class="s-weekly-style-items d-flex flex-column position-relative bg-white">
+                        <div class="s-weekly-style-items swiper-items d-flex flex-column position-relative bg-white">
                             <div class="s-weekly-style-items-top position-relative">
                                 <div class="s-weekly-style-overly"></div>
                                 <span class="s-weekly-style-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
@@ -634,7 +635,7 @@
                         <!-- End s-weekly-style-items -->
 
                         <!-- s-weekly-style-items -->
-                        <div class="s-weekly-style-items d-flex flex-column position-relative bg-white">
+                        <div class="s-weekly-style-items swiper-items d-flex flex-column position-relative bg-white">
                             <div class="s-weekly-style-items-top position-relative">
                                 <div class="s-weekly-style-overly"></div>
                                 <span class="s-weekly-style-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
@@ -663,7 +664,7 @@
                         <!-- End s-weekly-style-items -->
 
                         <!-- s-weekly-style-items -->
-                        <div class="s-weekly-style-items d-flex flex-column position-relative bg-white">
+                        <div class="s-weekly-style-items swiper-items d-flex flex-column position-relative bg-white">
                             <div class="s-weekly-style-items-top position-relative">
                                 <div class="s-weekly-style-overly"></div>
                                 <span class="s-weekly-style-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
@@ -693,13 +694,18 @@
                     </div>
 
 
-                    <div class="s-weekly-style-btn-box d-flex justify-content-between align-items-center w-100 position-absolute">
-                        <span class="px-2 py-3 text-muted" role="button"><i class="icon-right fs-3"></i></span>
-                        <span class="px-2 py-3 text-muted" role="button"><i class="icon-left fs-3"></i></span>
+                    <div class="s-weekly-style-btn-box swiper-btn d-flex justify-content-between align-items-center w-100 position-absolute px-2">
+                        <!-- <span class="px-2 py-3 text-muted swiper-btn-prev" role="button"><i class="icon-right fs-3"></i></span> -->
+                        <button type="button" class="btn btn-light text-muted swiper-btn-prev p-0 disabled" disabled>
+                            <i class="icon-right fs-3 px-2 py-3"></i>
+                        </button>
+                        <button type="button" class="btn btn-light p-0 text-muted swiper-btn-next">
+                            <i class="icon-left fs-3 px-2 py-3"></i>
+                        </button>
                     </div>
 
                 </div>
-
+                <!-- End swiper-main -->
                 <!-- <div class="h-100 w-100 d-flex align-items-center ms-4 me-1 overflow-hidden">
                     <div class="col-12 d-flex align-items-center">
                         <div class="bg-danger mx-2 col-3" style="height: 250px;"></div>
