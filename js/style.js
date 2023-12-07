@@ -122,15 +122,8 @@ function showSubMenu(tag) {
 /****** */
 /************************** */
 
-
-// swiper-items
-// swiper-container
-// swiper-btn
-//    let swiperItemsLen = $(swiper).find('.swiper-items').length; //////////
-//    let countMargin = $('.swiper-main').outerWidth(); //////////
-
 let marginRight = 0;
-// const width = 300px
+
 $('.swiper-btn .swiper-btn-next').click(function(e) {
     const swiper = $(e.target).parents('.swiper-main')[0];
     let swiperItems = $(swiper).find('.swiper-items');
