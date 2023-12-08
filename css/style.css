@@ -432,7 +432,7 @@ a {
 /****h-product-items******/
 
 .h-product-items .h-product-items-top .h-product-overly {
-    background-color: #4b4b4b;
+    background-color: #777777;
     opacity: 0.1;
     position: absolute;
     top: 0;
@@ -620,6 +620,33 @@ a {
 }
 
 .bestselling-container .bestselling-items .h-product-items-top {
+    height: 360px;
+}
+
+
+/******************/
+
+
+/********s-popular-brands*********/
+
+.s-popular-brands * {
+    position: relative;
+    z-index: 2;
+}
+
+.s-popular-brands .popular-brands-line {
+    height: 240px;
+    background-color: rgb(228, 228, 228);
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.s-popular-brands .popular-brands-icon {
+    height: 240px;
+}
+
+.popular-brands-product-items .h-product-items-top {
     height: 360px;
 }
 
