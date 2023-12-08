@@ -122,41 +122,45 @@ function showSubMenu(tag) {
 /****** */
 /************************** */
 
-let marginRight = 0;
-
-$('.swiper-btn .swiper-btn-next').click(function(e) {
+// let marginRight = 0;
+$('.swiper-btn.swiper-btn-next').click(function(e) {
     const swiper = $(e.target).parents('.swiper-main')[0];
     let swiperItems = $(swiper).find('.swiper-items');
     let swiperItemwidth = $(swiperItems[0]).outerWidth();
-    let swiperContainerWidth = $('.swiper-container').outerWidth();
-    marginRight = (marginRight - swiperItemwidth);
+    let swiperContainerWidth = $('.swiper-container', swiper).outerWidth();
+    console.log(swiperContainerWidth);
+    console.log(swiperItemwidth);
+    let mrValue = parseInt($(swiper).attr('data-m-right'));
+    let marginRight = (mrValue - swiperItemwidth);
+    $(swiper).attr('data-m-right', marginRight);
     if (-(swiperContainerWidth - swiperItemwidth) <= marginRight) {
         $('.swiper-btn-prev', swiper).removeClass('disabled')
         $('.swiper-btn-prev', swiper).attr('disabled', false)
 
-        $('.swiper-container').css('margin-right', marginRight + 'px');
+        $('.swiper-container', swiper).css('margin-right', marginRight + 'px');
 
         if (-(swiperContainerWidth - swiperItemwidth) == marginRight) {
-            const btn = $(e.target).parent('button')[0];
-            $(btn).attr('disabled', true);
-            $(btn).addClass('disabled');
+            $(e.target).attr('disabled', true);
+            $(e.target).addClass('disabled');
         }
     }
 });
 
-$('.swiper-btn .swiper-btn-prev').click(function(e) {
+$('.swiper-btn.swiper-btn-prev').click(function(e) {
     const swiper = $(e.target).parents('.swiper-main')[0];
     let swiperItems = $(swiper).find('.swiper-items');
     let swiperItemwidth = $(swiperItems[0]).outerWidth();
-    marginRight = (marginRight + swiperItemwidth);
+    let mrValue = parseInt($(swiper).attr('data-m-right'));
+    let marginRight = (mrValue + swiperItemwidth);
+    $(swiper).attr('data-m-right', marginRight);
+    console.log(marginRight)
     if (marginRight <= 0) {
         $('.swiper-btn-next', swiper).removeClass('disabled')
         $('.swiper-btn-next', swiper).attr('disabled', false)
-        $('.swiper-container').css('margin-right', marginRight + 'px');
+        $('.swiper-container', swiper).css('margin-right', marginRight + 'px');
         if (marginRight == 0) {
-            const btn = $(e.target).parent('button')[0];
-            $(btn).attr('disabled', true);
-            $(btn).addClass('disabled');
+            $(e.target).attr('disabled', true);
+            $(e.target).addClass('disabled');
         }
     }
 });
