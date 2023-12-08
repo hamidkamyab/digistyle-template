@@ -431,6 +431,12 @@ a {
 
 /****h-product-items******/
 
+.h-product-items.h-product-items-ds {
+    height: 100%;
+    width: 350px;
+    padding: 10px;
+}
+
 .h-product-items .h-product-items-top .h-product-overly {
     background-color: #777777;
     opacity: 0.1;
@@ -611,12 +617,6 @@ a {
 
 .s-bestselling .bestselling-container {
     height: 100%;
-}
-
-.bestselling-container .bestselling-items {
-    height: 100%;
-    width: 350px;
-    padding: 10px;
 }
 
 .bestselling-container .bestselling-items .h-product-items-top {
