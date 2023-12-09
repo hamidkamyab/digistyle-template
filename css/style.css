@@ -437,7 +437,7 @@ a {
     padding: 10px;
 }
 
-.h-product-items .h-product-items-top .h-product-overly {
+.h-product-items .h-product-overly {
     background-color: #777777;
     opacity: 0.1;
     position: absolute;
@@ -467,11 +467,11 @@ a {
 }
 
 .h-product-items-top .h-product-items-brand,
-.h-product-items-top .h-product-items-size {
+.h-product-items .h-product-items-info {
     z-index: 5 !important;
 }
 
-.h-product-items-top .h-product-items-size {
+.h-product-items .h-product-items-info {
     bottom: -37px;
     width: 100%;
     right: 0;
@@ -481,7 +481,7 @@ a {
     -moz-transition: 0.4s;
 }
 
-.h-product-items:hover .h-product-items-top .h-product-items-size {
+.h-product-items:hover .h-product-items-info {
     bottom: 0;
     transition: 0.4s;
     -o-transition: 0.4s;
@@ -497,7 +497,7 @@ a {
     margin-left: -8px;
 }
 
-.h-product-items .h-product-items-size .h-product-items-size-top .h-product-items-off {
+.h-product-items .h-product-items-info .h-product-items-info-top .h-product-items-off {
     background-color: rgba(0, 0, 0, 0.8)
 }
 
@@ -648,6 +648,32 @@ a {
 
 .popular-brands-product-items .h-product-items-top {
     height: 360px;
+}
+
+
+/******************/
+
+
+/********s-iranian-designers**********/
+
+.iranian-designers-body .nav-pills .nav-link,
+.iranian-designers-body .nav-pills .nav-link.active {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.iranian-designers-body .nav-pills .nav-link {
+    color: #888 !important;
+    font-size: 18px;
+}
+
+.iranian-designers-body .nav-pills .nav-link.active {
+    color: #222 !important;
+    font-size: 22px;
+}
+
+.iranian-designers-items {
+    height: 400px;
 }
 
 
