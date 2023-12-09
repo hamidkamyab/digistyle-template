@@ -654,25 +654,25 @@ a {
 /******************/
 
 
-/********s-iranian-designers**********/
+/********s-designers**********/
 
-.iranian-designers-body .nav-pills .nav-link,
-.iranian-designers-body .nav-pills .nav-link.active {
+.designers-body .nav-pills .nav-link,
+.designers-body .nav-pills .nav-link.active {
     border: none !important;
     background-color: transparent !important;
 }
 
-.iranian-designers-body .nav-pills .nav-link {
+.designers-body .nav-pills .nav-link {
     color: #888 !important;
     font-size: 18px;
 }
 
-.iranian-designers-body .nav-pills .nav-link.active {
+.designers-body .nav-pills .nav-link.active {
     color: #222 !important;
     font-size: 22px;
 }
 
-.iranian-designers-items {
+.designers-items {
     height: 400px;
 }
 
