@@ -31,6 +31,10 @@ a {
     text-decoration: none;
 }
 
+.text-justify {
+    text-align: justify !important;
+}
+
 .vr-seperator {
     width: 1px;
     height: 10px;
@@ -674,6 +678,43 @@ a {
 
 .designers-items {
     height: 400px;
+}
+
+
+/******************/
+
+
+/********s-last-blog**********/
+
+.last-blog-content .last-blog-item {
+    border: 1px solid transparent !important;
+    height: 334px;
+}
+
+.last-blog-content .card {
+    border: none !important;
+    height: 100% !important;
+    position: relative;
+    z-index: 3;
+}
+
+.last-blog-content .last-blog-item:hover {
+    border: 1px solid #222 !important;
+}
+
+.last-blog-content .last-blog-item .card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    z-index: 2;
+    background: linear-gradient(0deg, #fff, hsla(0, 0%, 100%, 0)) !important;
+}
+
+.last-blog-content .last-blog-item .card .card-text {
+    color: #444;
 }
 
 
