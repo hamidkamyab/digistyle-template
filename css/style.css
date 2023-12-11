@@ -69,6 +69,10 @@ a {
     color: var(--silver);
 }
 
+.text-pink {
+    color: var(--pink);
+}
+
 .border-light-silver {
     border-color: var(--light-silver);
 }
@@ -137,9 +141,40 @@ a {
     background-color: var(--silver);
 }
 
+.btn-pink {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+.btn-pink:hover {
+    color: #fff;
+}
+
+.btn-outline-pink {
+    border-color: var(--pink);
+    color: #222;
+}
+
+.btn-outline-pink:hover {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+.btn-outline-pink-reverse {
+    background-color: var(--pink);
+    border-color: var(--pink);
+    color: #fff;
+}
+
+.btn-outline-pink-reverse:hover {
+    background-color: transparent;
+    color: var(--pink);
+}
+
 :root {
     --light-silver: #ececec;
     --silver: #dddddd;
+    --pink: #FC427B;
 }
 
 .mCS_rightPos .mCSB_container {
@@ -511,6 +546,24 @@ a {
 
 
 /***********************/
+
+
+/*****s-weekly-style******/
+
+.s-amazing {
+    background-color: rgb(241, 241, 241);
+}
+
+.amazing-right img {
+    width: 128px;
+}
+
+.amazing-items-offer-box img {
+    width: 128px;
+}
+
+
+/************************/
 
 
 /****s-weekly-style******/
