@@ -719,3 +719,31 @@ a {
 
 
 /******************/
+
+
+/*********s-footer-menu*********/
+
+.footer-menu-container a {
+    color: #222;
+}
+
+.footer-menu-container ul a:hover {
+    text-decoration: underline;
+}
+
+
+/******************/
+
+
+/********s-footer-rules**********/
+
+.footer-rules-container img {
+    width: 110px;
+}
+
+.footer-rules-container a {
+    color: rgb(68, 68, 68);
+}
+
+
+/******************/
