@@ -164,3 +164,9 @@ $('.swiper-btn.swiper-btn-prev').click(function(e) {
         }
     }
 });
+
+$('.c-footer-more').click(function() {
+    $('.c-footer-d').toggleClass('open')
+    $('.c-footer-more-o').toggleClass('close')
+    $('.c-footer-more-c').toggleClass('close')
+});

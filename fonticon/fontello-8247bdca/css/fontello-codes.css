@@ -14,3 +14,11 @@
 .icon-toman-2:before { content: '\e80c'; } /* '' */
 .icon-left:before { content: '\e80d'; } /* '' */
 .icon-right:before { content: '\e80e'; } /* '' */
+.icon-up-dir:before { content: '\e80f'; } /* '' */
+.icon-up-open:before { content: '\e810'; } /* '' */
+.icon-up-open-mini:before { content: '\e811'; } /* '' */
+.icon-up-open-1:before { content: '\e812'; } /* '' */
+.icon-x-line:before { content: '\e813'; } /* '' */
+.icon-telegram-line:before { content: '\e814'; } /* '' */
+.icon-angle-up:before { content: '\f106'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */

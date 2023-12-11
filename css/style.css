@@ -133,6 +133,10 @@ a {
     box-shadow: 0.6pt 0.6pt 4px #fff;
 }
 
+.btn-silver {
+    background-color: var(--silver);
+}
+
 :root {
     --light-silver: #ececec;
     --silver: #dddddd;
@@ -743,6 +747,99 @@ a {
 
 .footer-rules-container a {
     color: rgb(68, 68, 68);
+}
+
+
+/******************/
+
+
+/*********s-footer*********/
+
+.footer-container .footer-logo img {
+    filter: brightness(50%);
+    width: 150px;
+}
+
+.footer-logo-line {
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.t-footer-box a {
+    color: #666;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.t-footer-box a:hover {
+    color: #222;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.t-footer-box .page-up {
+    border-color: #c7c7c7 !important;
+    padding: 3px;
+}
+
+.t-footer-newsLetters button,
+.t-footer-newsLetters input {
+    box-shadow: none !important;
+    height: 38px;
+}
+
+.t-footer-newsLetters button {
+    padding: 8px 10px!important;
+}
+
+.t-footer-newsLetters input {
+    padding: 8px 6px!important;
+}
+
+.t-footer-newsLetters input:focus {
+    border: 1px solid #000000 !important;
+}
+
+.c-footer-app img {
+    width: 128px;
+}
+
+.c-footer-b p {
+    line-height: 30px;
+    color: #666;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.c-footer-d {
+    height: 160px;
+}
+
+.c-footer-d.open {
+    height: 100%;
+}
+
+.c-footer-more-s.close {
+    display: none;
+}
+
+.c-footer-more {
+    bottom: 0;
+    width: 100%;
+    padding: 3px 0;
+    background-color: #fff;
+}
+
+.c-footer-namad-box a {
+    width: 128px;
+    height: 128px;
+}
+
+.c-footer-namad-box a img {
+    height: 92px;
 }
 
 
