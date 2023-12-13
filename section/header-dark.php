@@ -1,5 +1,5 @@
 ﻿ <!-- s-header -->
- <section class="s-header mb-4 position-absolute w-100">
+ <section class="s-header s-header-dark mb-4 position-absolute w-100">
      <!-- headerBox -->
      <div class="headerBox position-relative d-flex justify-content-center">
          <div class="container header-container mt-4 p-0">
@@ -33,8 +33,8 @@
                                  <i class="icon-login-thin fs-3 p-0 m-0 "></i>
                                  <span class="fs-14 ">وارد شوید</span>
 
-                                 <div class="header-user-msg position-absolute bg-white">
-                                     <span class="text-dark fs-12 d-block w-100 text-center">وارد حساب کاربری خود
+                                 <div class="header-user-msg position-absolute bg-dark">
+                                     <span class="text-white fs-12 d-block w-100 text-center">وارد حساب کاربری خود
                                          شوید.</span>
                                  </div>
                              </div>

@@ -122,21 +122,21 @@ function showSubMenu(tag) {
 /****** */
 /************************** */
 
-// let marginRight = 0;
 $('.swiper-btn.swiper-btn-next').click(function(e) {
     const swiper = $(e.target).parents('.swiper-main')[0];
     let swiperItems = $(swiper).find('.swiper-items');
     let swiperItemwidth = $(swiperItems[0]).outerWidth();
     let swiperContainerWidth = $('.swiper-container', swiper).outerWidth();
-    console.log(swiperContainerWidth);
-    console.log(swiperItemwidth);
     let mrValue = parseInt($(swiper).attr('data-m-right'));
     let marginRight = (mrValue - swiperItemwidth);
     $(swiper).attr('data-m-right', marginRight);
     if (-(swiperContainerWidth - swiperItemwidth) <= marginRight) {
+        if ($(swiper).attr('data-swiper-fade') == 'true') {
+            $(swiperItems).fadeOut(200)
+            $(swiperItems).fadeIn(400)
+        }
         $('.swiper-btn-prev', swiper).removeClass('disabled')
         $('.swiper-btn-prev', swiper).attr('disabled', false)
-
         $('.swiper-container', swiper).css('margin-right', marginRight + 'px');
 
         if (-(swiperContainerWidth - swiperItemwidth) == marginRight) {
@@ -153,8 +153,11 @@ $('.swiper-btn.swiper-btn-prev').click(function(e) {
     let mrValue = parseInt($(swiper).attr('data-m-right'));
     let marginRight = (mrValue + swiperItemwidth);
     $(swiper).attr('data-m-right', marginRight);
-    console.log(marginRight)
     if (marginRight <= 0) {
+        if ($(swiper).attr('data-swiper-fade') == 'true') {
+            $(swiperItems).fadeOut(200)
+            $(swiperItems).fadeIn(400)
+        }
         $('.swiper-btn-next', swiper).removeClass('disabled')
         $('.swiper-btn-next', swiper).attr('disabled', false)
         $('.swiper-container', swiper).css('margin-right', marginRight + 'px');
