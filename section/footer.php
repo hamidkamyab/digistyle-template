@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <div class="c-footer-b col-12 d-flex align-items-start">
-                        <div class="c-footer-d col-7 overflow-hidden position-relative">
+                        <div class="col-more-d c-footer-d col-7 overflow-hidden position-relative">
                             <h6>فروشگاه اینترنتی مد و لباس دیجی‌استایل</h6>
                             <p class="text-justify">
                                 دیجی‌استایل، پس از تجربه‌ی موفق فروشگاه اینترنتی دیجی‌کالا به صورت تخصصی پا به عرصه مد، پوشاک و سبک زندگی گذاشت تا همان تجربه‌ی شیرین، در قالبی نو تکرار شود. در دیجی ‌استایل می‌توانید همه آنچه مرتبط با مد و پوشاک از انواع لباس زنانه، لباس مردانه و لباس
@@ -84,10 +84,10 @@
                                 کنند و در صورت مغایرت کالا تا 14 روز امکان بازگشت کالا را وجود دارد. پس همین حالا برای خرید انواع رنگ مو، سشوار، پنکیک، ماسک صورت، خط چشم، لاک ناخن، ادکلن، کانسیلر، شامپو، سایه ابرو و سایه چشم به فروشگاه اینترنتی دیجی استایل
                                 مراجعه کنید و تنها با چند کلیک محصول مورد نظر خود را سفارش دهید.
                             </p>
-                            <div class="c-footer-more position-absolute d-flex">
+                            <div class="col-more c-footer-more position-absolute d-flex">
                                 <div class="d-flex align-items-center gap-1 fs-6" role="button">
-                                    <span class="c-footer-more-o c-footer-more-s">مشاهده بیشتر</span>
-                                    <span class="c-footer-more-c c-footer-more-s close">بستن</span>
+                                    <span class="col-more-b col-more-o c-footer-more-o c-footer-more-s">مشاهده بیشتر</span>
+                                    <span class="col-more-b col-more-c c-footer-more-c c-footer-more-s close">بستن</span>
                                     <i class="icon-left fs-14"></i>
                                 </div>
                             </div>

@@ -1,4 +1,12 @@
-﻿/************Header********** */
+﻿$(window).on('load', () => {
+        const psl_w = $('.p-size-list-box').outerWidth();
+        const psc_w = $('.p-size-list-container').outerWidth();
+        if (psl_w >= psc_w) {
+            $('.p-size-btn').addClass('disabled')
+            $('.p-size-btn').attr('disabled', true);
+        }
+    })
+    /************Header********** */
 var headerTimeout;
 $('.header-cartBox').on('mouseenter', function() {
     visibleCartTag('.header-cart', 'show')
@@ -130,6 +138,10 @@ $('.swiper-btn.swiper-btn-next').click(function(e) {
     let mrValue = parseInt($(swiper).attr('data-m-right'));
     let marginRight = (mrValue - swiperItemwidth);
     $(swiper).attr('data-m-right', marginRight);
+    console.log("swiperContainerWidth", swiperContainerWidth)
+    console.log("swiperItemwidth", swiperItemwidth)
+    console.log("marginRight", marginRight)
+    console.log("-(swiperContainerWidth - swiperItemwidth):", -(swiperContainerWidth - swiperItemwidth))
     if (-(swiperContainerWidth - swiperItemwidth) <= marginRight) {
         if ($(swiper).attr('data-swiper-fade') == 'true') {
             $(swiperItems).fadeOut(200)
@@ -168,8 +180,64 @@ $('.swiper-btn.swiper-btn-prev').click(function(e) {
     }
 });
 
-$('.c-footer-more').click(function() {
-    $('.c-footer-d').toggleClass('open')
-    $('.c-footer-more-o').toggleClass('close')
-    $('.c-footer-more-c').toggleClass('close')
+$('.col-more').click(function() {
+    $('.col-more-d').toggleClass('open')
+    $('.col-more-o').toggleClass('close')
+    $('.col-more-c').toggleClass('close')
 });
+
+
+$('.p-size-btn.p-size-btn-next').click(function(e) {
+    if (!$(e.target).hasClass('disabled')) {
+        const parent = $(e.target).parents('.p-size-list')[0];
+        const box = $('.p-size-list-box', parent)[0];
+        const w_box = $(box).outerWidth();
+        const w_ps_container = $('.p-size-list-container', box).outerWidth();
+
+        let mrValue = parseInt($(box).attr('data-m-right'));
+        let marginRight = mrValue + w_box - 46;
+        $(box).attr('data-m-right', marginRight);
+
+        if (marginRight <= w_ps_container) {
+            $('.p-size-btn-prev', parent).removeClass('disabled')
+            $('.p-size-btn-prev', parent).attr('disabled', false)
+            $('.p-size-list-container', box).css('margin-right', -marginRight + 'px');
+        }
+        if (marginRight + w_box >= w_ps_container) {
+            $(e.target).attr('disabled', true);
+            $(e.target).addClass('disabled');
+        }
+    }
+});
+
+$('.p-size-btn.p-size-btn-prev').click(function(e) {
+    if (!$(e.target).hasClass('disabled')) {
+        const parent = $(e.target).parents('.p-size-list')[0];
+        const box = $('.p-size-list-box', parent)[0];
+        const w_box = $(box).outerWidth();
+        const w_ps_container = $('.p-size-list-container', box).outerWidth();
+
+        let mrValue = parseInt($(box).attr('data-m-right'));
+        let marginRight = mrValue - w_box;
+        if (marginRight <= 0) {
+            marginRight = 0;
+        }
+        $(box).attr('data-m-right', marginRight);
+
+        if (marginRight <= w_ps_container) {
+            $('.p-size-btn-next', parent).removeClass('disabled')
+            $('.p-size-btn-next', parent).attr('disabled', false)
+            $('.p-size-list-container', box).css('margin-right', -marginRight + 'px');
+        }
+        if (marginRight == 0) {
+            $(e.target).attr('disabled', true);
+            $(e.target).addClass('disabled');
+        }
+    }
+});
+
+$('.p-size-list-container li span').on('click', (e) => {
+    $('.p-size-list-container li span').removeClass('active')
+    $(e.target).addClass('active');
+    $('.p-size-s').text($(e.target).text());
+})
