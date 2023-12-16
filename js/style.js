@@ -241,3 +241,49 @@ $('.p-size-list-container li span').on('click', (e) => {
     $(e.target).addClass('active');
     $('.p-size-s').text($(e.target).text());
 })
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    let floatingOffsetList = [];
+    let count = 0;
+    let lastScrollPosition = 0;
+    let id;
+
+    var targetTag = document.querySelectorAll('*[data-id="target-f"]');
+    var floatingElement = $('.floating-tag');
+    targetTag.forEach(element => {
+        floatingOffsetList.push($(element).offset().top)
+    });
+
+    $(window).scroll(function() {
+        let currentScrollPosition = window.scrollY;
+        if (currentScrollPosition > lastScrollPosition) {
+            if ($(this).scrollTop() > floatingOffsetList[count]) {
+                floatingElement.fadeIn(0);
+                id = '#' + $(targetTag[count]).attr('id') + "-link"
+                $('.p-floating-link').removeClass('active')
+                $(id).addClass('active');
+
+                count++;
+            }
+        } else if (currentScrollPosition < lastScrollPosition) {
+            if ($(this).scrollTop() < floatingOffsetList[0]) {
+                count = 0;
+                floatingElement.fadeOut(0);
+            } else if ($(this).scrollTop() < floatingOffsetList[count - 1]) {
+                count--;
+
+                id = '#' + $(targetTag[count - 1]).attr('id') + "-link"
+                $('.p-floating-link').removeClass('active')
+                $(id).addClass('active');
+            }
+        }
+        lastScrollPosition = currentScrollPosition;
+    });
+});
+
+$('.p-floating-link').on('click', (e) => {
+    $('.p-floating-link').removeClass('active')
+    $(e.target).addClass('active');
+})

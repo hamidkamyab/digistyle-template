@@ -1158,5 +1158,28 @@ a {
     margin: 0 2px;
 }
 
+.floating-tag {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dfdfdf;
+    display: none;
+    z-index: 12;
+}
+
+.p-f-pic img {
+    width: 46px;
+}
+
+.p-floating-tag .right a {
+    color: rgb(66, 66, 66);
+}
+
+.p-floating-tag .right a.active {
+    border-color: var(--bs-dark) !important;
+    color: #000;
+}
+
 
 /*************************************/

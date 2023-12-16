@@ -17,16 +17,16 @@
 </head>
 
 <body class="BYekan vh-100">
-
     <!-- bodyBox -->
-    <div class="bodyBox mCustomScrollbar HoverSC mCS_noMargin mCS_rightPos overflow-hidden vh-100 p-0 m-0" data-mcs-theme="light">
+    <!-- mCustomScrollbar HoverSC mCS_noMargin mCS_rightPos overflow-hidden vh-100 -->
+    <div class="bodyBox p-0 m-0" data-mcs-theme="light">
 
         <?php include 'section/header-dark.php'; ?>
         <!------------------------------------>
 
         <!-- p-container -->
         <div class="p-container d-up container py-4">
-            <nav class="navigator" >
+            <nav class="navigator">
                 <ul class="list-unstyled d-flex align-items-center fs-12">
                     <li class="nav-item d-flex align-items-center">
                         <a href="" class="d-block w-100">دیجی‌استایل</a>
@@ -99,18 +99,18 @@
                     </div>
 
                     <div class="d-egr d-flex align-items-center justify-content-center gap-4 my-3">
-                            <div class="d-flex flex-column align-items-center justify-content-center gap-2">
-                                <img src="./img/icon/Easydelivery.svg" class=""/>
-                                <span class="text-muted">تحویل سریع و آسان</span>
-                            </div>
-                            <div class="d-flex flex-column align-items-center justify-content-center gap-2">
-                                <img src="./img/icon/Guaranteeoriginality.svg" class=""/>
-                                <span class="text-muted">تحویل سریع و آسان</span>
-                            </div>
-                            <div class="d-flex flex-column align-items-center justify-content-center gap-2">
-                                <img src="./img/icon/Returnguarantee.svg" class=""/>
-                                <span class="text-muted">تحویل سریع و آسان</span>
-                            </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+                            <img src="./img/icon/Easydelivery.svg" class="" />
+                            <span class="text-muted">تحویل سریع و آسان</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+                            <img src="./img/icon/Guaranteeoriginality.svg" class="" />
+                            <span class="text-muted">تحویل سریع و آسان</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+                            <img src="./img/icon/Returnguarantee.svg" class="" />
+                            <span class="text-muted">تحویل سریع و آسان</span>
+                        </div>
                     </div>
                 </div>
                 <div class="p-content-left col-6 px-4 d-flex flex-column gap-5">
@@ -167,7 +167,7 @@
                                         <div class="bg-dark text-white d-flex flex-row align-items-center gap-1 py-0 px-2"><span>۲۷</span><i class="pt-1">٪</i></div>
                                     </div>
                                 </div>
-                                <div class="p-other-seller d-flex align-items-center gap-1">                                    
+                                <div class="p-other-seller d-flex align-items-center gap-1">
                                     <span>1 فروشنده دیگر</span>
                                     <i class="icon-left"></i>
                                 </div>
@@ -181,7 +181,7 @@
                                 <span class="p-size-s vazir">L</span>
                             </div>
                             <div class="p-size-list position-relative mt-4 d-flex justify-content-center" data-m-right="0">
-                                
+
                                 <div class="p-size-list-box overflow-hidden position-relative h-100" data-m-right="0">
                                     <ul class="p-size-list-container list-unstyled d-flex align-items-center gap-2 px-2 position-absolute">
                                         <li role="button"><span class="border border-1 border-dark-silver vazir">S</span></li>
@@ -195,7 +195,7 @@
                                 </div>
 
                                 <span class="p-size-btn p-size-btn-prev icon-right-open-1 position-absolute d-flex align-items-center bg-white disabled" disabled role="button"></span>
-                                <span class="p-size-btn p-size-btn-next icon-left-open-1 position-absolute d-flex align-items-center bg-white"  role="button"></span>
+                                <span class="p-size-btn p-size-btn-next icon-left-open-1 position-absolute d-flex align-items-center bg-white" role="button"></span>
                             </div>
                         </div>
                         <div class="col-12 d-flex gap-4 mt-5 justify-content-center align-items-center">
@@ -206,13 +206,47 @@
                                 <i class="icon-heart-empty-1 fs-3"></i>
                             </button>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
             <!-- End p-content -->
+
+            <!-- Your other HTML content goes here -->
+
+            <div class="floating-tag p-floating-tag w-100">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <div class="right fs-18 d-flex align-items-bottom align-self-end gap-2">
+                        <a href="#p-attributes" id="p-attributes-link" class="p-floating-link py-2 px-3 border-3 border-bottom border-white active" role="button">ویژگی ها</a>
+                        <a href="#p-comments" id="p-comments-link" class="p-floating-link py-2 px-3 border-3 border-bottom border-white" role="button">دیدگاه کاربران</a>
+                    </div>
+                    <div class="left d-flex align-items-center gap-2">
+                        <ul class="list-unstyled m-0 p-0 p-f-details">
+                            <li class="d-flex justify-content-end gap-1">
+                                <span class="fs-18">۲۱۹,۰۰۰</span>
+                                <i class="icon-toman fs-5"></i>
+                            </li>
+                            <li class="d-flex justify-content-end gap-1">
+                                <span class="vazir fs-14">L</span>
+                                <i class="icon-dress-size-1"></i>
+                            </li>
+                        </ul>
+                        <div class="p-f-pic p-2">
+                            <img src="./img/product/1/1.jpg" alt="">
+                        </div>
+                        <div class="p-f-addToCart">
+                            <button type="button" class="btn btn-outline-dark-reverse rounded-0 py-2 px-4 fs-18">افزودن به سبد خرید</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Your other HTML content goes here -->
+
+
+
             <!-- p-attributes -->
-            <div class="p-attributes col-12 d-flex my-5 border-bottom border-1 border-dark-silver pb-4">
+            <div id="p-attributes" data-id="target-f" class="p-attributes col-12 d-flex my-5 border-bottom border-1 border-dark-silver pb-5 mb-2">
                 <!-- p-title -->
                 <div class="p-title col-3 p-2">
                     <h5>ویژگی ها</h5>
@@ -227,7 +261,7 @@
                             <span class="col-4">
                                 جنس
                             </span>
-                            
+
                             <div class="p-attributes-v col-8 d-flex align-items-start">
                                 <span>جودون</span>
                             </div>
@@ -236,7 +270,7 @@
                             <span class="col-4">
                                 آستین
                             </span>
-                            
+
                             <div class="p-attributes-v col-8 d-flex align-items-start">
                                 <span>کوتاه</span>
                             </div>
@@ -325,8 +359,9 @@
             </div>
             <!-- End p-attributes -->
 
+
             <!-- p-comments -->
-            <div class="p-comments col-12 d-flex my-5 border-bottom border-1 border-dark-silver pb-4">
+            <div id="p-comments" data-id="target-f" class="p-comments col-12 d-flex my-5 border-bottom border-1 border-dark-silver pb-5 mb-2">
                 <!-- p-title -->
                 <div class="p-title col-3 p-2 d-flex flex-column gap-4">
                     <div>
@@ -343,18 +378,18 @@
                     </div>
 
                     <button type="button" class="btn btn-outline-dark rounded-0 px-1 py-2 fs-18 mt-5">شما هم نظر خود را بنویسید!</button>
-                    
+
                 </div>
                 <!-- Endp-title -->
 
                 <div class="p-comments-content col-9 py-2 ps-4">
                     <div class="p-c-proposal d-flex align-items-center gap-1">
                         <i class="icon-trophy-cup fs-14 text-info"></i>
-                        <span class="fs-12 text-info">بیش از ۱۰ خریدار این کالا را پیشنهاد داده‌اند</span>          
+                        <span class="fs-12 text-info">بیش از ۱۰ خریدار این کالا را پیشنهاد داده‌اند</span>
                     </div>
                     <div class="p-comments-item col-12 d-flex align-items-start my-5">
                         <div class="col-8 d-flex align-items-start gap-3 pe-2">
-                            <span class="p-comments-rate py-1 px-3 fs-18 text-white p-comments-rate-2">2</span>
+                            <span class="p-comments-rate py-1 px-3 fs-18 text-white p-comments-rate-1">1</span>
                             <div class="p-comments-box">
                                 <h6 class="p-comments-title">پولوشرت ورزشی مردانه سارزی</h6>
                                 <div class="d-flex align-items-center gap-2 fs-12 text-secondary mb-3">
@@ -429,6 +464,8 @@
         </div>
         <!-- End p-container -->
 
+        <?php include 'section/similar-offer.php'; ?>
+
         <!------------------------------------>
         <?php include 'section/footer.php'; ?>
 
@@ -446,6 +483,5 @@
     <script src="./js/jquery.custom-scrollbar.js"></script>
     <script src="./js/style.js"></script>
 </footer>
-
 
 </html>
