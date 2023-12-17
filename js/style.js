@@ -50,10 +50,14 @@ var slideTimer;
 const len = $('.sliderUl li').length;
 
 function automaticSlider() {
+    let time = $('.slider').attr('data-slider-time');
+    if (!time) {
+        time = 4000;
+    }
     slideTimer = setInterval(() => {
         slideCount++;
         slider()
-    }, 4000);
+    }, time);
 }
 automaticSlider()
 
@@ -71,6 +75,17 @@ function slider() {
     $(slideId).fadeIn();
     $('.sliderPaginateItem').removeClass('active')
     $(paginateId).addClass('active')
+}
+
+function gotToSlide(tag, index) {
+    let slideId = '#slide-' + index;
+    clearInterval(slideTimer);
+    $('.sliderUl li').fadeOut();
+    $(slideId).fadeIn();
+    $('.sliderPaginateItem').removeClass('active')
+    $(tag).addClass('active')
+    slideCount = index;
+    automaticSlider()
 }
 
 $('.nextSlide').click(function() {
@@ -138,10 +153,6 @@ $('.swiper-btn.swiper-btn-next').click(function(e) {
     let mrValue = parseInt($(swiper).attr('data-m-right'));
     let marginRight = (mrValue - swiperItemwidth);
     $(swiper).attr('data-m-right', marginRight);
-    console.log("swiperContainerWidth", swiperContainerWidth)
-    console.log("swiperItemwidth", swiperItemwidth)
-    console.log("marginRight", marginRight)
-    console.log("-(swiperContainerWidth - swiperItemwidth):", -(swiperContainerWidth - swiperItemwidth))
     if (-(swiperContainerWidth - swiperItemwidth) <= marginRight) {
         if ($(swiper).attr('data-swiper-fade') == 'true') {
             $(swiperItems).fadeOut(200)

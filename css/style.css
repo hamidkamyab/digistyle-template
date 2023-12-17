@@ -402,12 +402,12 @@ a {
 .sliderOperationBox .sliderPaginateBox .sliderPaginateItem {
     width: 8px;
     height: 8px;
-    border: 2px solid #272727;
+    border: 1px solid #272727;
     box-shadow: 0 0 1px 1px #fff;
 }
 
 .sliderOperationBox .sliderPaginateBox .sliderPaginateItem.active {
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
 }
 
 .sliderOperationBox .sliderBtnBox i {
@@ -1179,6 +1179,38 @@ a {
 .p-floating-tag .right a.active {
     border-color: var(--bs-dark) !important;
     color: #000;
+}
+
+
+/*************************************/
+
+
+/***********Category Page*************/
+
+.c-slider .sliderOperationBox .sliderPaginateBox .sliderPaginateItem {
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 1px 1px #272727;
+}
+
+.c-slider .sliderOperationBox .sliderPaginateBox .sliderPaginateItem.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.c-slider .sliderOperationBox {
+    top: 380px;
+    right: 0;
+    left: 0;
+}
+
+.cat-t-it>div,
+.cat-t-it img {
+    border-radius: 5px;
+}
+
+.cat-t-it>div:hover {
+    background-color: rgb(241, 241, 241);
+    border-color: #888 !important;
+    transition: 0.2s ease-in-out;
 }
 
 
