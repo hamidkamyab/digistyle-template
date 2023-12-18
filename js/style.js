@@ -146,50 +146,126 @@ function showSubMenu(tag) {
 /************************** */
 
 $('.swiper-btn.swiper-btn-next').click(function(e) {
+    let swPage;
     const swiper = $(e.target).parents('.swiper-main')[0];
     let swiperItems = $(swiper).find('.swiper-items');
     let swiperItemwidth = $(swiperItems[0]).outerWidth();
-    let swiperContainerWidth = $('.swiper-container', swiper).outerWidth();
-    let mrValue = parseInt($(swiper).attr('data-m-right'));
-    let marginRight = (mrValue - swiperItemwidth);
-    $(swiper).attr('data-m-right', marginRight);
-    if (-(swiperContainerWidth - swiperItemwidth) <= marginRight) {
-        if ($(swiper).attr('data-swiper-fade') == 'true') {
-            $(swiperItems).fadeOut(200)
-            $(swiperItems).fadeIn(400)
-        }
-        $('.swiper-btn-prev', swiper).removeClass('disabled')
-        $('.swiper-btn-prev', swiper).attr('disabled', false)
-        $('.swiper-container', swiper).css('margin-right', marginRight + 'px');
+    let swiperWidth = $(swiper).outerWidth();
 
-        if (-(swiperContainerWidth - swiperItemwidth) == marginRight) {
-            $(e.target).attr('disabled', true);
-            $(e.target).addClass('disabled');
-        }
+    let swNum = Math.floor(swiperWidth / swiperItemwidth);
+
+    let swPageCount = Math.ceil($(swiperItems).length / swNum);
+
+    swPage = $(swiper).attr('data-s-count');
+    let mrValue = parseInt($(swiper).attr('data-m-right'));
+
+    console.log(swPageCount);
+
+    swPage++;
+    let marginRight = (swNum * swiperItemwidth) + mrValue;
+
+    if (swPage == swPageCount - 1) {
+        marginRight = mrValue + (swNum * swiperItemwidth);
+        console.log('marginRight2', marginRight)
+        $(e.target).attr('disabled', true);
+        $(e.target).addClass('disabled');
     }
+    $(swiper).attr('data-m-right', marginRight);
+    $(swiper).attr('data-s-count', swPage);
+
+    if ($(swiper).attr('data-swiper-fade') == 'true') {
+        $(swiperItems).fadeOut(200)
+        $(swiperItems).fadeIn(400)
+    }
+    $('.swiper-btn-prev', swiper).removeClass('disabled')
+    $('.swiper-btn-prev', swiper).attr('disabled', false)
+    $('.swiper-container', swiper).css('margin-right', -marginRight + 'px');
+
 });
 
 $('.swiper-btn.swiper-btn-prev').click(function(e) {
+    let swPage;
+
     const swiper = $(e.target).parents('.swiper-main')[0];
     let swiperItems = $(swiper).find('.swiper-items');
     let swiperItemwidth = $(swiperItems[0]).outerWidth();
+    let swiperWidth = $(swiper).outerWidth();
+    let swNum = Math.floor(swiperWidth / swiperItemwidth);
+
+    swPage = $(swiper).attr('data-s-count');
     let mrValue = parseInt($(swiper).attr('data-m-right'));
-    let marginRight = (mrValue + swiperItemwidth);
-    $(swiper).attr('data-m-right', marginRight);
-    if (marginRight <= 0) {
-        if ($(swiper).attr('data-swiper-fade') == 'true') {
-            $(swiperItems).fadeOut(200)
-            $(swiperItems).fadeIn(400)
-        }
-        $('.swiper-btn-next', swiper).removeClass('disabled')
-        $('.swiper-btn-next', swiper).attr('disabled', false)
-        $('.swiper-container', swiper).css('margin-right', marginRight + 'px');
-        if (marginRight == 0) {
-            $(e.target).attr('disabled', true);
-            $(e.target).addClass('disabled');
-        }
+
+    swPage--;
+    let marginRight = mrValue - (swiperItemwidth * swNum);
+
+    if (swPage == 0) {
+        marginRight = 0;
+        $(e.target).attr('disabled', true);
+        $(e.target).addClass('disabled');
     }
+    $(swiper).attr('data-m-right', marginRight);
+    $(swiper).attr('data-s-count', swPage);
+
+
+
+    if ($(swiper).attr('data-swiper-fade') == 'true') {
+        $(swiperItems).fadeOut(200)
+        $(swiperItems).fadeIn(400)
+    }
+    $('.swiper-btn-next', swiper).removeClass('disabled')
+    $('.swiper-btn-next', swiper).attr('disabled', false)
+    $('.swiper-container', swiper).css('margin-right', -marginRight + 'px');
+
 });
+
+
+
+// $('.swiper-btn.swiper-btn-next').click(function(e) {
+//     const swiper = $(e.target).parents('.swiper-main')[0];
+//     let swiperItems = $(swiper).find('.swiper-items');
+//     let swiperItemwidth = $(swiperItems[0]).outerWidth();
+//     let swiperContainerWidth = $('.swiper-container', swiper).outerWidth();
+
+//     let mrValue = parseInt($(swiper).attr('data-m-right'));
+//     let marginRight = (mrValue - swiperItemwidth);
+//     $(swiper).attr('data-m-right', marginRight);
+//     if (-(swiperContainerWidth - swiperItemwidth) <= marginRight) {
+//         if ($(swiper).attr('data-swiper-fade') == 'true') {
+//             $(swiperItems).fadeOut(200)
+//             $(swiperItems).fadeIn(400)
+//         }
+//         $('.swiper-btn-prev', swiper).removeClass('disabled')
+//         $('.swiper-btn-prev', swiper).attr('disabled', false)
+//         $('.swiper-container', swiper).css('margin-right', marginRight + 'px');
+
+//         if (-(swiperContainerWidth - swiperItemwidth) == marginRight) {
+//             $(e.target).attr('disabled', true);
+//             $(e.target).addClass('disabled');
+//         }
+//     }
+// });
+
+// $('.swiper-btn.swiper-btn-prev').click(function(e) {
+//     const swiper = $(e.target).parents('.swiper-main')[0];
+//     let swiperItems = $(swiper).find('.swiper-items');
+//     let swiperItemwidth = $(swiperItems[0]).outerWidth();
+//     let mrValue = parseInt($(swiper).attr('data-m-right'));
+//     let marginRight = (mrValue + swiperItemwidth);
+//     $(swiper).attr('data-m-right', marginRight);
+//     if (marginRight <= 0) {
+//         if ($(swiper).attr('data-swiper-fade') == 'true') {
+//             $(swiperItems).fadeOut(200)
+//             $(swiperItems).fadeIn(400)
+//         }
+//         $('.swiper-btn-next', swiper).removeClass('disabled')
+//         $('.swiper-btn-next', swiper).attr('disabled', false)
+//         $('.swiper-container', swiper).css('margin-right', marginRight + 'px');
+//         if (marginRight == 0) {
+//             $(e.target).attr('disabled', true);
+//             $(e.target).addClass('disabled');
+//         }
+//     }
+// });
 
 $('.col-more').click(function() {
     $('.col-more-d').toggleClass('open')

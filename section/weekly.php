@@ -18,14 +18,14 @@
                     </div>
 
                     <!-- swiper-main -->
-                    <div class="swiper-main w-100 d-flex align-items-center mx-4 gap-3 overflow-hidden position-relative" data-m-right="0">
+                    <div class="swiper-main w-100 d-flex align-items-center mx-4 gap-3 overflow-hidden position-relative" data-m-right="0" data-s-count="0">
 
                         <div class="swiper-container d-flex align-items-center">
                             <!-- h-product-items -->
                             <div class="weekly-style-items h-product-items swiper-items d-flex flex-column gap-3 position-relative bg-white">
                                 <div class=" h-product-items-top position-relative">
                                     <div class="h-product-overly"></div>
-                                    <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                    <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                     <div class="h-product-items-pic d-flex justify-content-center">
                                         <img src="img/weekly/1.jpg" alt="">
                                     </div>
@@ -54,7 +54,7 @@
                             <div class="weekly-style-items h-product-items swiper-items d-flex flex-column gap-3 position-relative bg-white">
                                 <div class=" h-product-items-top position-relative">
                                     <div class="h-product-overly"></div>
-                                    <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                    <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                     <div class="h-product-items-pic d-flex justify-content-center">
                                         <img src="img/weekly/2.jpg" alt="">
                                     </div>
@@ -82,7 +82,7 @@
                             <div class="weekly-style-items h-product-items swiper-items d-flex flex-column gap-3 position-relative bg-white">
                                 <div class=" h-product-items-top position-relative">
                                     <div class="h-product-overly"></div>
-                                    <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                    <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                     <div class="h-product-items-pic d-flex justify-content-center">
                                         <img src="img/weekly/3.jpg" alt="">
                                     </div>
@@ -111,7 +111,7 @@
                             <div class="weekly-style-items h-product-items swiper-items d-flex flex-column gap-3 position-relative bg-white">
                                 <div class=" h-product-items-top position-relative">
                                     <div class="h-product-overly"></div>
-                                    <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                    <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                     <div class="h-product-items-pic d-flex justify-content-center">
                                         <img src="img/weekly/4.jpg" alt="">
                                     </div>

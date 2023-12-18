@@ -8,14 +8,14 @@
                 </div>
 
                 <!-- swiper-main -->
-                <div class="swiper-main w-100 d-flex overflow-hidden position-relative" data-m-right="0">
+                <div class="swiper-main w-100 d-flex overflow-hidden position-relative" data-m-right="0" data-s-count="0">
 
                     <div class="swiper-container d-flex align-items-center">
                         <!-- h-product-items -->
                         <div class="visit-items h-product-items h-product-items-ds swiper-items d-flex flex-column gap-3 position-relative bg-white">
                             <div class=" h-product-items-top position-relative">
                                 <div class="h-product-overly"></div>
-                                <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                 <div class="h-product-items-pic d-flex justify-content-center">
                                     <img src="img/bestsell/1.jpg" alt="">
                                 </div>
@@ -44,7 +44,7 @@
                         <div class="visit-items h-product-items h-product-items-ds swiper-items d-flex flex-column gap-3 position-relative bg-white">
                             <div class=" h-product-items-top position-relative">
                                 <div class="h-product-overly"></div>
-                                <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                 <div class="h-product-items-pic d-flex justify-content-center">
                                     <img src="img/bestsell/2.jpg" alt="">
                                 </div>
@@ -73,7 +73,7 @@
                         <div class="visit-items h-product-items h-product-items-ds swiper-items d-flex flex-column gap-3 position-relative bg-white">
                             <div class=" h-product-items-top position-relative">
                                 <div class="h-product-overly"></div>
-                                <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                 <div class="h-product-items-pic d-flex justify-content-center">
                                     <img src="img/bestsell/3.jpg" alt="">
                                 </div>
@@ -102,7 +102,7 @@
                         <div class="visit-items h-product-items h-product-items-ds swiper-items d-flex flex-column gap-3 position-relative bg-white">
                             <div class=" h-product-items-top position-relative">
                                 <div class="h-product-overly"></div>
-                                <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                 <div class="h-product-items-pic d-flex justify-content-center">
                                     <img src="img/bestsell/4.jpg" alt="">
                                 </div>
@@ -131,7 +131,7 @@
                         <div class="visit-items h-product-items h-product-items-ds swiper-items d-flex flex-column gap-3 position-relative bg-white">
                             <div class=" h-product-items-top position-relative">
                                 <div class="h-product-overly"></div>
-                                <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                 <div class="h-product-items-pic d-flex justify-content-center">
                                     <img src="img/bestsell/5.jpg" alt="">
                                 </div>
@@ -160,7 +160,7 @@
                         <div class="visit-items h-product-items h-product-items-ds swiper-items d-flex flex-column gap-3 position-relative bg-white">
                             <div class=" h-product-items-top position-relative">
                                 <div class="h-product-overly"></div>
-                                <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                 <div class="h-product-items-pic d-flex justify-content-center">
                                     <img src="img/bestsell/6.jpg" alt="">
                                 </div>

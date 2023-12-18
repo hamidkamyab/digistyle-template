@@ -31,7 +31,7 @@
                             <div class="popular-brands-product-items h-product-items col-4 px-2 d-flex flex-column gap-3 position-relative">
                                 <div class=" h-product-items-top position-relative bg-white">
                                     <div class="h-product-overly"></div>
-                                    <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                    <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                     <div class="h-product-items-pic d-flex justify-content-center">
                                         <img src="img/popular-brands/product/1.jpg" alt="">
                                     </div>
@@ -60,7 +60,7 @@
                             <div class="popular-brands-product-items h-product-items col-4 px-2 d-flex flex-column gap-3 position-relative">
                                 <div class=" h-product-items-top position-relative  bg-white">
                                     <div class="h-product-overly"></div>
-                                    <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                    <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                     <div class="h-product-items-pic d-flex justify-content-center">
                                         <img src="img/popular-brands/product/2.jpg" alt="">
                                     </div>
@@ -89,7 +89,7 @@
                             <div class="popular-brands-product-items h-product-items col-4 px-2 d-flex flex-column gap-3 position-relative">
                                 <div class=" h-product-items-top position-relative  bg-white">
                                     <div class="h-product-overly"></div>
-                                    <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                    <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                     <div class="h-product-items-pic d-flex justify-content-center">
                                         <img src="img/popular-brands/product/3.jpg" alt="">
                                     </div>
@@ -145,7 +145,7 @@
                             <div class="popular-brands-product-items h-product-items col-4 px-2 d-flex flex-column gap-3 position-relative">
                                 <div class=" h-product-items-top position-relative bg-white">
                                     <div class="h-product-overly"></div>
-                                    <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                    <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                     <div class="h-product-items-pic d-flex justify-content-center">
                                         <img src="img/popular-brands/product/1.jpg" alt="">
                                     </div>
@@ -174,7 +174,7 @@
                             <div class="popular-brands-product-items h-product-items col-4 px-2 d-flex flex-column gap-3 position-relative">
                                 <div class=" h-product-items-top position-relative  bg-white">
                                     <div class="h-product-overly"></div>
-                                    <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                    <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                     <div class="h-product-items-pic d-flex justify-content-center">
                                         <img src="img/popular-brands/product/2.jpg" alt="">
                                     </div>
@@ -203,7 +203,7 @@
                             <div class="popular-brands-product-items h-product-items col-4 px-2 d-flex flex-column gap-3 position-relative">
                                 <div class=" h-product-items-top position-relative  bg-white">
                                     <div class="h-product-overly"></div>
-                                    <span class="h-product-items-brand bg-white py-1 px-2 position-relative fs-14">برند</span>
+                                    <span class="h-product-items-brand bg-white py-1 px-2 position-absolute top-0 fs-14">برند</span>
                                     <div class="h-product-items-pic d-flex justify-content-center">
                                         <img src="img/popular-brands/product/3.jpg" alt="">
                                     </div>
