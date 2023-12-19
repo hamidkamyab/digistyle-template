@@ -1249,5 +1249,22 @@ a {
     flex-grow: 0 !important;
 }
 
+.s-cat-children .s-cat-children-item .s-cat-children-link span {
+    color: #666;
+}
+
+.s-cat-children .s-cat-children-item .s-cat-children-link:hover span {
+    color: #222;
+}
+
+.s-cat-children .s-cat-children-item .s-cat-children-link>div {
+    width: 128px;
+}
+
+.s-cat-children-item img {
+    width: 82px;
+    height: 82px;
+}
+
 
 /*************************************/

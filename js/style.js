@@ -152,7 +152,7 @@ $(window).on('load', () => {
         let swItems = $(sw).find('.swiper-items');
         let swItemwidth = $(swItems[0]).outerWidth();
         let swNum = Math.floor(swWidth / swItemwidth);
-        let swPageCount = Math.floor($(swItems).length / swNum);
+        let swPageCount = Math.ceil($(swItems).length / swNum);
         if (swPageCount <= 1) {
             $('.swiper-btn-prev', sw).addClass('disabled')
             $('.swiper-btn-prev', sw).attr('disabled', true)
@@ -171,9 +171,17 @@ $('.swiper-btn.swiper-btn-next').click(function(e) {
     console.log('swiperWidth=>', swiperWidth)
     let swNum = Math.floor(swiperWidth / swiperItemwidth);
 
-    let swPageCount = Math.floor($(swiperItems).length / swNum);
+    let swPageCount = Math.ceil($(swiperItems).length / swNum);
+
+    console.log(swiperItems.length)
+    console.log('swNum', swNum)
+    console.log('swPageCount', swPageCount)
+
 
     swPage = $(swiper).attr('data-s-count');
+
+    console.log('swPage', swPage)
+
     let mrValue = parseInt($(swiper).attr('data-m-right'));
 
     swPage++;

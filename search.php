@@ -53,6 +53,198 @@
                     <span>کالا</span>
                 </div>
             </div>
+            <div class="row my-4">
+                <!-- swiper-main -->
+                <div class="s-cat-children swiper-main w-100 d-flex overflow-hidden position-relative" data-m-right="0" data-s-count="1">
+
+                    <div class="swiper-container d-flex align-items-center">
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/t-shirt.jpg" alt="">
+                                    <span class="fs-12">تی شرت مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/slack-suit.jpg" alt="">
+                                    <span class="fs-12">لباس راحتی مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/shirt.jpg" alt="">
+                                    <span class="fs-12">پیراهن مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/socks.jpg" alt="">
+                                    <span class="fs-12">جوراب مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/pants.jpg" alt="">
+                                    <span class="fs-12">شلوار و سرهمی مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/pants-jin.jpg" alt="">
+                                    <span class="fs-12">شلوار جین مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/b-shorts.jpg" alt="">
+                                    <span class="fs-12">شلوارک مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/top.jpg" alt="">
+                                    <span class="fs-12">تاپ مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/hoodie.jpg" alt="">
+                                    <span class="fs-12">هودی مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/raincoat.jpg" alt="">
+                                    <span class="fs-12">پالتو، کاپشن،بارانی</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/jackets.jpg" alt="">
+                                    <span class="fs-12">ژاکت و پلیور مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/suit.jpg" alt="">
+                                    <span class="fs-12">کت و ست رسمی</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/sport.jpg" alt="">
+                                    <span class="fs-12">لباس ورزشی مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/p-shirt.jpg" alt="">
+                                    <span class="fs-12">پولوشرت مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/sweatshirt.jpg" alt="">
+                                    <span class="fs-12">سوشرت مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+                        <!-- swiper-items -->
+                        <div class="s-cat-children-item swiper-items p-2">
+                            <a href="#" class="s-cat-children-link">
+                                <div class="d-flex flex-column align-items-center justify-content-start gap-1 position-relative bg-white">
+                                    <img src="./img/search-top/leggings.jpg" alt="">
+                                    <span class="fs-12">ساق مردانه</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End swiper-items -->
+
+
+                    </div>
+
+
+                    <button type="button" class="swiper-btn swiper-btn-prev icon-right fs-6 px-1 py-2 position-absolute btn btn-light text-muted disabled" disabled>
+                    </button>
+                    <button type="button" class="swiper-btn swiper-btn-next icon-left fs-6 px-1 py-2 position-absolute btn btn-light text-muted">
+                    </button>
+
+                </div>
+                <!-- End swiper-main -->
+            </div>
+
         </div>
 
         <!------------------------------------>
