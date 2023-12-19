@@ -7,7 +7,7 @@
                 </div>
 
                 <!-- swiper-main -->
-                <div class="swiper-main w-100 d-flex overflow-hidden position-relative" data-m-right="0" data-s-count="0">
+                <div class="swiper-main w-100 d-flex overflow-hidden position-relative" data-m-right="0" data-s-count="1">
 
                     <div class="swiper-container d-flex align-items-center">
                         <!-- h-product-items -->

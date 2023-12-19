@@ -145,42 +145,56 @@ function showSubMenu(tag) {
 /****** */
 /************************** */
 
+$(window).on('load', () => {
+    swMains = document.querySelectorAll('.swiper-main');
+    swMains.forEach(sw => {
+        let swWidth = $(sw).outerWidth();
+        let swItems = $(sw).find('.swiper-items');
+        let swItemwidth = $(swItems[0]).outerWidth();
+        let swNum = Math.floor(swWidth / swItemwidth);
+        let swPageCount = Math.floor($(swItems).length / swNum);
+        if (swPageCount <= 1) {
+            $('.swiper-btn-prev', sw).addClass('disabled')
+            $('.swiper-btn-prev', sw).attr('disabled', true)
+            $('.swiper-btn-next', sw).addClass('disabled')
+            $('.swiper-btn-next', sw).attr('disabled', true)
+        }
+    })
+})
+
 $('.swiper-btn.swiper-btn-next').click(function(e) {
     let swPage;
     const swiper = $(e.target).parents('.swiper-main')[0];
     let swiperItems = $(swiper).find('.swiper-items');
     let swiperItemwidth = $(swiperItems[0]).outerWidth();
     let swiperWidth = $(swiper).outerWidth();
-
+    console.log('swiperWidth=>', swiperWidth)
     let swNum = Math.floor(swiperWidth / swiperItemwidth);
 
-    let swPageCount = Math.ceil($(swiperItems).length / swNum);
+    let swPageCount = Math.floor($(swiperItems).length / swNum);
 
     swPage = $(swiper).attr('data-s-count');
     let mrValue = parseInt($(swiper).attr('data-m-right'));
 
-    console.log(swPageCount);
-
     swPage++;
     let marginRight = (swNum * swiperItemwidth) + mrValue;
+    if (swPageCount > 1) {
+        if (swPage == swPageCount) {
+            marginRight = mrValue + (swNum * swiperItemwidth);
+            $(e.target).attr('disabled', true);
+            $(e.target).addClass('disabled');
+        }
+        $(swiper).attr('data-m-right', marginRight);
+        $(swiper).attr('data-s-count', swPage);
 
-    if (swPage == swPageCount - 1) {
-        marginRight = mrValue + (swNum * swiperItemwidth);
-        console.log('marginRight2', marginRight)
-        $(e.target).attr('disabled', true);
-        $(e.target).addClass('disabled');
+        if ($(swiper).attr('data-swiper-fade') == 'true') {
+            $(swiperItems).fadeOut(200)
+            $(swiperItems).fadeIn(400)
+        }
+        $('.swiper-btn-prev', swiper).removeClass('disabled')
+        $('.swiper-btn-prev', swiper).attr('disabled', false)
+        $('.swiper-container', swiper).css('margin-right', -marginRight + 'px');
     }
-    $(swiper).attr('data-m-right', marginRight);
-    $(swiper).attr('data-s-count', swPage);
-
-    if ($(swiper).attr('data-swiper-fade') == 'true') {
-        $(swiperItems).fadeOut(200)
-        $(swiperItems).fadeIn(400)
-    }
-    $('.swiper-btn-prev', swiper).removeClass('disabled')
-    $('.swiper-btn-prev', swiper).attr('disabled', false)
-    $('.swiper-container', swiper).css('margin-right', -marginRight + 'px');
-
 });
 
 $('.swiper-btn.swiper-btn-prev').click(function(e) {
@@ -198,7 +212,7 @@ $('.swiper-btn.swiper-btn-prev').click(function(e) {
     swPage--;
     let marginRight = mrValue - (swiperItemwidth * swNum);
 
-    if (swPage == 0) {
+    if (swPage == 1) {
         marginRight = 0;
         $(e.target).attr('disabled', true);
         $(e.target).addClass('disabled');
